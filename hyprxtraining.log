@@ -1,0 +1,1193 @@
+W1029 01:12:59.241000 708 torch/distributed/run.py:851] 
+W1029 01:12:59.241000 708 torch/distributed/run.py:851] *****************************************
+W1029 01:12:59.241000 708 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1029 01:12:59.241000 708 torch/distributed/run.py:851] *****************************************
+hyprxLLM training | parameters will be reported below
+Device: cuda:0 | Distributed processes: 2
+Training tokens: 72,697,221
+Validation tokens: 734,316
+Sequence length: 512 | Batch/GPU: 8 | Gradient accumulation: 4
+Initial GPU statistics:
+  GPU 0: Tesla T4 | Util 11% | VRAM 0.65/15.00 GB | Memory util 0% | Temp 61 C | Power 30.2 W
+  GPU 1: Tesla T4 | Util 8% | VRAM 0.65/15.00 GB | Memory util 0% | Temp 65 C | Power 30.4 W
+Found checkpoint at global step 2000
+Parameters: 15,586,176
+Starting global step: 2000
+Target global step: 10000
+step 2001/10000 | loss 4.6935 | lr 2.76e-04 | grad norm 1.008 | step time 0.783s | avg 0.783s/step | throughput 41,863 tokens/s
+step 2010/10000 | loss 4.7813 | lr 2.76e-04 | grad norm 1.308 | step time 0.242s | avg 0.294s/step | throughput 111,334 tokens/s
+step 2020/10000 | loss 4.7586 | lr 2.76e-04 | grad norm 1.211 | step time 0.242s | avg 0.268s/step | throughput 122,169 tokens/s
+step 2030/10000 | loss 4.5870 | lr 2.75e-04 | grad norm 1.307 | step time 0.245s | avg 0.260s/step | throughput 125,978 tokens/s
+step 2040/10000 | loss 4.8262 | lr 2.75e-04 | grad norm 1.228 | step time 0.247s | avg 0.256s/step | throughput 127,897 tokens/s
+step 2050/10000 | loss 4.7640 | lr 2.75e-04 | grad norm 1.094 | step time 0.245s | avg 0.254s/step | throughput 129,065 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 68 C | Power 64.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 72 C | Power 46.8 W
+step 2060/10000 | loss 4.6789 | lr 2.75e-04 | grad norm 1.134 | step time 0.244s | avg 0.245s/step | throughput 133,991 tokens/s
+step 2070/10000 | loss 4.7247 | lr 2.74e-04 | grad norm 1.154 | step time 0.248s | avg 0.245s/step | throughput 133,485 tokens/s
+step 2080/10000 | loss 4.6882 | lr 2.74e-04 | grad norm 1.140 | step time 0.249s | avg 0.246s/step | throughput 133,056 tokens/s
+step 2090/10000 | loss 4.7162 | lr 2.74e-04 | grad norm 1.246 | step time 0.251s | avg 0.247s/step | throughput 132,529 tokens/s
+step 2100/10000 | loss 4.6663 | lr 2.74e-04 | grad norm 1.125 | step time 0.253s | avg 0.248s/step | throughput 131,884 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 65.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 60.0 W
+step 2110/10000 | loss 4.6878 | lr 2.73e-04 | grad norm 1.145 | step time 0.253s | avg 0.249s/step | throughput 131,352 tokens/s
+step 2120/10000 | loss 4.6516 | lr 2.73e-04 | grad norm 1.258 | step time 0.256s | avg 0.251s/step | throughput 130,554 tokens/s
+step 2130/10000 | loss 4.6478 | lr 2.73e-04 | grad norm 1.090 | step time 0.255s | avg 0.252s/step | throughput 129,919 tokens/s
+step 2140/10000 | loss 4.7260 | lr 2.73e-04 | grad norm 1.110 | step time 0.252s | avg 0.253s/step | throughput 129,440 tokens/s
+step 2150/10000 | loss 4.5953 | lr 2.72e-04 | grad norm 1.579 | step time 0.260s | avg 0.255s/step | throughput 128,705 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 75 C | Power 50.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 80 C | Power 67.7 W
+step 2160/10000 | loss 4.7530 | lr 2.72e-04 | grad norm 1.087 | step time 0.264s | avg 0.256s/step | throughput 127,790 tokens/s
+step 2170/10000 | loss 4.7762 | lr 2.72e-04 | grad norm 1.179 | step time 0.263s | avg 0.258s/step | throughput 126,975 tokens/s
+step 2180/10000 | loss 4.7712 | lr 2.72e-04 | grad norm 1.162 | step time 0.264s | avg 0.260s/step | throughput 125,937 tokens/s
+step 2190/10000 | loss 4.8146 | lr 2.71e-04 | grad norm 1.358 | step time 0.264s | avg 0.262s/step | throughput 125,006 tokens/s
+step 2200/10000 | loss 4.7509 | lr 2.71e-04 | grad norm 1.269 | step time 0.261s | avg 0.263s/step | throughput 124,402 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 76 C | Power 64.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 81 C | Power 63.2 W
+step 2210/10000 | loss 4.6706 | lr 2.71e-04 | grad norm 1.038 | step time 0.265s | avg 0.264s/step | throughput 124,184 tokens/s
+step 2220/10000 | loss 4.7222 | lr 2.71e-04 | grad norm 1.022 | step time 0.262s | avg 0.264s/step | throughput 124,329 tokens/s
+step 2230/10000 | loss 4.6839 | lr 2.70e-04 | grad norm 1.156 | step time 0.261s | avg 0.262s/step | throughput 124,959 tokens/s
+step 2240/10000 | loss 4.6800 | lr 2.70e-04 | grad norm 1.034 | step time 0.255s | avg 0.261s/step | throughput 125,745 tokens/s
+step 2250/10000 | loss 4.6298 | lr 2.70e-04 | grad norm 1.104 | step time 0.255s | avg 0.258s/step | throughput 126,767 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 50.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 69.5 W
+Validation loss at step 2250: 4.7851
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 2260/10000 | loss 4.7575 | lr 2.70e-04 | grad norm 1.090 | step time 0.255s | avg 0.265s/step | throughput 123,494 tokens/s
+step 2270/10000 | loss 4.7254 | lr 2.69e-04 | grad norm 1.113 | step time 0.248s | avg 0.264s/step | throughput 124,287 tokens/s
+step 2280/10000 | loss 4.7741 | lr 2.69e-04 | grad norm 1.041 | step time 0.248s | avg 0.262s/step | throughput 124,862 tokens/s
+step 2290/10000 | loss 4.6897 | lr 2.69e-04 | grad norm 1.020 | step time 0.251s | avg 0.261s/step | throughput 125,361 tokens/s
+step 2300/10000 | loss 4.6805 | lr 2.68e-04 | grad norm 1.058 | step time 0.250s | avg 0.261s/step | throughput 125,759 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 71 C | Power 66.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 75 C | Power 65.9 W
+step 2310/10000 | loss 4.6314 | lr 2.68e-04 | grad norm 1.122 | step time 0.249s | avg 0.251s/step | throughput 130,516 tokens/s
+step 2320/10000 | loss 4.6881 | lr 2.68e-04 | grad norm 1.096 | step time 0.249s | avg 0.250s/step | throughput 130,925 tokens/s
+step 2330/10000 | loss 4.7214 | lr 2.68e-04 | grad norm 0.971 | step time 0.249s | avg 0.250s/step | throughput 131,298 tokens/s
+step 2340/10000 | loss 4.6936 | lr 2.67e-04 | grad norm 1.004 | step time 0.250s | avg 0.249s/step | throughput 131,519 tokens/s
+step 2350/10000 | loss 4.6952 | lr 2.67e-04 | grad norm 1.106 | step time 0.249s | avg 0.249s/step | throughput 131,680 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 70 C | Power 64.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 74 C | Power 66.8 W
+step 2360/10000 | loss 4.7217 | lr 2.67e-04 | grad norm 1.036 | step time 0.248s | avg 0.249s/step | throughput 131,748 tokens/s
+step 2370/10000 | loss 4.7353 | lr 2.66e-04 | grad norm 1.065 | step time 0.247s | avg 0.248s/step | throughput 131,887 tokens/s
+step 2380/10000 | loss 4.6618 | lr 2.66e-04 | grad norm 1.026 | step time 0.247s | avg 0.248s/step | throughput 131,926 tokens/s
+step 2390/10000 | loss 4.6640 | lr 2.66e-04 | grad norm 1.118 | step time 0.249s | avg 0.248s/step | throughput 131,889 tokens/s
+step 2400/10000 | loss 4.6693 | lr 2.66e-04 | grad norm 1.104 | step time 0.250s | avg 0.249s/step | throughput 131,761 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 71 C | Power 41.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 75 C | Power 64.4 W
+step 2410/10000 | loss 4.6196 | lr 2.65e-04 | grad norm 1.067 | step time 0.250s | avg 0.249s/step | throughput 131,821 tokens/s
+step 2420/10000 | loss 4.6543 | lr 2.65e-04 | grad norm 1.025 | step time 0.250s | avg 0.249s/step | throughput 131,620 tokens/s
+step 2430/10000 | loss 4.6050 | lr 2.65e-04 | grad norm 1.099 | step time 0.249s | avg 0.249s/step | throughput 131,384 tokens/s
+step 2440/10000 | loss 4.6559 | lr 2.64e-04 | grad norm 1.125 | step time 0.255s | avg 0.250s/step | throughput 131,030 tokens/s
+step 2450/10000 | loss 4.7093 | lr 2.64e-04 | grad norm 1.029 | step time 0.253s | avg 0.251s/step | throughput 130,763 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 69.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 56.4 W
+step 2460/10000 | loss 4.6059 | lr 2.64e-04 | grad norm 0.995 | step time 0.254s | avg 0.251s/step | throughput 130,349 tokens/s
+step 2470/10000 | loss 4.6604 | lr 2.64e-04 | grad norm 1.023 | step time 0.253s | avg 0.252s/step | throughput 129,851 tokens/s
+step 2480/10000 | loss 4.6247 | lr 2.63e-04 | grad norm 0.974 | step time 0.254s | avg 0.253s/step | throughput 129,468 tokens/s
+step 2490/10000 | loss 4.5997 | lr 2.63e-04 | grad norm 1.000 | step time 0.253s | avg 0.253s/step | throughput 129,277 tokens/s
+step 2500/10000 | loss 4.6181 | lr 2.63e-04 | grad norm 0.993 | step time 0.253s | avg 0.254s/step | throughput 129,093 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 74 C | Power 71.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 69% | Temp 78 C | Power 62.4 W
+Validation loss at step 2500: 4.7195
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 2510/10000 | loss 4.5564 | lr 2.62e-04 | grad norm 0.974 | step time 0.254s | avg 0.263s/step | throughput 124,794 tokens/s
+step 2520/10000 | loss 4.6045 | lr 2.62e-04 | grad norm 1.024 | step time 0.256s | avg 0.263s/step | throughput 124,780 tokens/s
+step 2530/10000 | loss 4.5420 | lr 2.62e-04 | grad norm 1.180 | step time 0.255s | avg 0.263s/step | throughput 124,786 tokens/s
+step 2540/10000 | loss 4.5947 | lr 2.62e-04 | grad norm 1.033 | step time 0.257s | avg 0.263s/step | throughput 124,770 tokens/s
+step 2550/10000 | loss 4.6063 | lr 2.61e-04 | grad norm 1.064 | step time 0.258s | avg 0.263s/step | throughput 124,734 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 74 C | Power 60.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 78 C | Power 63.6 W
+step 2560/10000 | loss 4.5893 | lr 2.61e-04 | grad norm 1.038 | step time 0.254s | avg 0.254s/step | throughput 128,859 tokens/s
+step 2570/10000 | loss 4.5707 | lr 2.61e-04 | grad norm 0.940 | step time 0.254s | avg 0.254s/step | throughput 128,891 tokens/s
+step 2580/10000 | loss 4.5803 | lr 2.60e-04 | grad norm 1.026 | step time 0.254s | avg 0.254s/step | throughput 128,888 tokens/s
+step 2590/10000 | loss 4.5450 | lr 2.60e-04 | grad norm 0.972 | step time 0.254s | avg 0.254s/step | throughput 128,846 tokens/s
+step 2600/10000 | loss 4.5595 | lr 2.60e-04 | grad norm 1.056 | step time 0.254s | avg 0.254s/step | throughput 128,913 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 67.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 63.0 W
+step 2610/10000 | loss 4.5806 | lr 2.59e-04 | grad norm 0.998 | step time 0.253s | avg 0.254s/step | throughput 128,953 tokens/s
+step 2620/10000 | loss 4.6086 | lr 2.59e-04 | grad norm 0.982 | step time 0.251s | avg 0.254s/step | throughput 129,062 tokens/s
+step 2630/10000 | loss 4.5562 | lr 2.59e-04 | grad norm 0.978 | step time 0.252s | avg 0.254s/step | throughput 129,229 tokens/s
+step 2640/10000 | loss 4.5643 | lr 2.59e-04 | grad norm 1.106 | step time 0.250s | avg 0.253s/step | throughput 129,498 tokens/s
+step 2650/10000 | loss 4.5466 | lr 2.58e-04 | grad norm 1.053 | step time 0.254s | avg 0.253s/step | throughput 129,681 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 42.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 48.2 W
+step 2660/10000 | loss 4.5083 | lr 2.58e-04 | grad norm 1.048 | step time 0.248s | avg 0.252s/step | throughput 129,927 tokens/s
+step 2670/10000 | loss 4.5491 | lr 2.58e-04 | grad norm 0.979 | step time 0.253s | avg 0.252s/step | throughput 130,057 tokens/s
+step 2680/10000 | loss 4.5171 | lr 2.57e-04 | grad norm 0.956 | step time 0.250s | avg 0.252s/step | throughput 130,194 tokens/s
+step 2690/10000 | loss 4.5629 | lr 2.57e-04 | grad norm 1.003 | step time 0.252s | avg 0.251s/step | throughput 130,347 tokens/s
+step 2700/10000 | loss 4.5632 | lr 2.57e-04 | grad norm 1.097 | step time 0.249s | avg 0.251s/step | throughput 130,387 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 65.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 63.7 W
+step 2710/10000 | loss 4.6377 | lr 2.56e-04 | grad norm 1.061 | step time 0.249s | avg 0.251s/step | throughput 130,444 tokens/s
+step 2720/10000 | loss 4.4552 | lr 2.56e-04 | grad norm 0.999 | step time 0.252s | avg 0.251s/step | throughput 130,499 tokens/s
+step 2730/10000 | loss 4.5224 | lr 2.56e-04 | grad norm 0.962 | step time 0.254s | avg 0.251s/step | throughput 130,411 tokens/s
+step 2740/10000 | loss 4.5190 | lr 2.55e-04 | grad norm 0.991 | step time 0.252s | avg 0.251s/step | throughput 130,313 tokens/s
+step 2750/10000 | loss 4.4256 | lr 2.55e-04 | grad norm 1.032 | step time 0.256s | avg 0.252s/step | throughput 130,186 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 64.5 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 60.5 W
+Validation loss at step 2750: 4.5875
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 2760/10000 | loss 4.5494 | lr 2.55e-04 | grad norm 1.037 | step time 0.250s | avg 0.260s/step | throughput 125,906 tokens/s
+step 2770/10000 | loss 4.4388 | lr 2.54e-04 | grad norm 0.930 | step time 0.248s | avg 0.260s/step | throughput 125,856 tokens/s
+step 2780/10000 | loss 4.5244 | lr 2.54e-04 | grad norm 0.941 | step time 0.253s | avg 0.261s/step | throughput 125,697 tokens/s
+step 2790/10000 | loss 4.5385 | lr 2.54e-04 | grad norm 0.945 | step time 0.254s | avg 0.261s/step | throughput 125,442 tokens/s
+step 2800/10000 | loss 4.4272 | lr 2.53e-04 | grad norm 0.935 | step time 0.253s | avg 0.261s/step | throughput 125,413 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 66.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 68.2 W
+step 2810/10000 | loss 4.3694 | lr 2.53e-04 | grad norm 0.968 | step time 0.255s | avg 0.253s/step | throughput 129,375 tokens/s
+step 2820/10000 | loss 4.5170 | lr 2.53e-04 | grad norm 0.977 | step time 0.254s | avg 0.254s/step | throughput 129,125 tokens/s
+step 2830/10000 | loss 4.4929 | lr 2.52e-04 | grad norm 0.973 | step time 0.255s | avg 0.254s/step | throughput 129,107 tokens/s
+step 2840/10000 | loss 4.4553 | lr 2.52e-04 | grad norm 0.993 | step time 0.254s | avg 0.254s/step | throughput 129,121 tokens/s
+step 2850/10000 | loss 4.4144 | lr 2.52e-04 | grad norm 0.982 | step time 0.254s | avg 0.254s/step | throughput 128,985 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 65.2 W
+step 2860/10000 | loss 4.5087 | lr 2.51e-04 | grad norm 1.009 | step time 0.255s | avg 0.254s/step | throughput 128,970 tokens/s
+step 2870/10000 | loss 4.4383 | lr 2.51e-04 | grad norm 0.954 | step time 0.254s | avg 0.254s/step | throughput 128,966 tokens/s
+step 2880/10000 | loss 4.4836 | lr 2.51e-04 | grad norm 0.980 | step time 0.255s | avg 0.254s/step | throughput 128,877 tokens/s
+step 2890/10000 | loss 4.4436 | lr 2.50e-04 | grad norm 0.997 | step time 0.254s | avg 0.254s/step | throughput 128,857 tokens/s
+step 2900/10000 | loss 4.3482 | lr 2.50e-04 | grad norm 0.953 | step time 0.254s | avg 0.254s/step | throughput 128,827 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 80% | Temp 73 C | Power 67.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 61.6 W
+step 2910/10000 | loss 4.4243 | lr 2.50e-04 | grad norm 0.982 | step time 0.255s | avg 0.254s/step | throughput 128,780 tokens/s
+step 2920/10000 | loss 4.4902 | lr 2.49e-04 | grad norm 0.970 | step time 0.255s | avg 0.254s/step | throughput 128,789 tokens/s
+step 2930/10000 | loss 4.4574 | lr 2.49e-04 | grad norm 0.928 | step time 0.253s | avg 0.254s/step | throughput 128,985 tokens/s
+step 2940/10000 | loss 4.3878 | lr 2.49e-04 | grad norm 1.010 | step time 0.254s | avg 0.254s/step | throughput 129,073 tokens/s
+step 2950/10000 | loss 4.4287 | lr 2.48e-04 | grad norm 0.926 | step time 0.249s | avg 0.254s/step | throughput 129,168 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 67.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 77 C | Power 65.3 W
+step 2960/10000 | loss 4.4227 | lr 2.48e-04 | grad norm 0.928 | step time 0.253s | avg 0.253s/step | throughput 129,438 tokens/s
+step 2970/10000 | loss 4.5454 | lr 2.48e-04 | grad norm 0.938 | step time 0.252s | avg 0.253s/step | throughput 129,644 tokens/s
+step 2980/10000 | loss 4.4058 | lr 2.47e-04 | grad norm 0.956 | step time 0.254s | avg 0.253s/step | throughput 129,660 tokens/s
+step 2990/10000 | loss 4.3242 | lr 2.47e-04 | grad norm 0.951 | step time 0.252s | avg 0.253s/step | throughput 129,731 tokens/s
+step 3000/10000 | loss 4.3756 | lr 2.47e-04 | grad norm 0.967 | step time 0.248s | avg 0.252s/step | throughput 129,961 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 70.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 65.8 W
+Validation loss at step 3000: 4.4995
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 3010/10000 | loss 4.3539 | lr 2.46e-04 | grad norm 0.988 | step time 0.252s | avg 0.261s/step | throughput 125,773 tokens/s
+step 3020/10000 | loss 4.3899 | lr 2.46e-04 | grad norm 0.972 | step time 0.255s | avg 0.261s/step | throughput 125,715 tokens/s
+step 3030/10000 | loss 4.3679 | lr 2.46e-04 | grad norm 0.935 | step time 0.252s | avg 0.260s/step | throughput 125,871 tokens/s
+step 3040/10000 | loss 4.4109 | lr 2.45e-04 | grad norm 0.929 | step time 0.251s | avg 0.260s/step | throughput 126,024 tokens/s
+step 3050/10000 | loss 4.5071 | lr 2.45e-04 | grad norm 0.980 | step time 0.252s | avg 0.260s/step | throughput 126,005 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 72 C | Power 70.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 64.9 W
+step 3060/10000 | loss 4.5063 | lr 2.45e-04 | grad norm 0.955 | step time 0.253s | avg 0.252s/step | throughput 130,226 tokens/s
+step 3070/10000 | loss 4.4526 | lr 2.44e-04 | grad norm 0.999 | step time 0.251s | avg 0.251s/step | throughput 130,302 tokens/s
+step 3080/10000 | loss 4.3196 | lr 2.44e-04 | grad norm 0.878 | step time 0.252s | avg 0.252s/step | throughput 130,249 tokens/s
+step 3090/10000 | loss 4.5112 | lr 2.44e-04 | grad norm 1.012 | step time 0.253s | avg 0.252s/step | throughput 130,064 tokens/s
+step 3100/10000 | loss 4.3590 | lr 2.43e-04 | grad norm 0.910 | step time 0.253s | avg 0.252s/step | throughput 130,020 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 50.2 W
+step 3110/10000 | loss 4.3737 | lr 2.43e-04 | grad norm 1.020 | step time 0.256s | avg 0.252s/step | throughput 129,872 tokens/s
+step 3120/10000 | loss 4.4344 | lr 2.43e-04 | grad norm 0.959 | step time 0.253s | avg 0.253s/step | throughput 129,658 tokens/s
+step 3130/10000 | loss 4.2692 | lr 2.42e-04 | grad norm 0.922 | step time 0.255s | avg 0.253s/step | throughput 129,374 tokens/s
+step 3140/10000 | loss 4.3748 | lr 2.42e-04 | grad norm 0.946 | step time 0.254s | avg 0.253s/step | throughput 129,301 tokens/s
+step 3150/10000 | loss 4.4230 | lr 2.42e-04 | grad norm 0.975 | step time 0.253s | avg 0.254s/step | throughput 129,133 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 66.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 64.1 W
+step 3160/10000 | loss 4.3740 | lr 2.41e-04 | grad norm 0.914 | step time 0.254s | avg 0.254s/step | throughput 128,998 tokens/s
+step 3170/10000 | loss 4.3064 | lr 2.41e-04 | grad norm 0.926 | step time 0.255s | avg 0.254s/step | throughput 128,960 tokens/s
+step 3180/10000 | loss 4.3409 | lr 2.41e-04 | grad norm 0.960 | step time 0.254s | avg 0.254s/step | throughput 128,946 tokens/s
+step 3190/10000 | loss 4.2978 | lr 2.40e-04 | grad norm 0.951 | step time 0.255s | avg 0.254s/step | throughput 128,901 tokens/s
+step 3200/10000 | loss 4.3011 | lr 2.40e-04 | grad norm 0.943 | step time 0.255s | avg 0.254s/step | throughput 128,805 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 67.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 43.1 W
+step 3210/10000 | loss 4.3361 | lr 2.39e-04 | grad norm 0.939 | step time 0.255s | avg 0.254s/step | throughput 128,894 tokens/s
+step 3220/10000 | loss 4.2215 | lr 2.39e-04 | grad norm 0.968 | step time 0.252s | avg 0.254s/step | throughput 129,025 tokens/s
+step 3230/10000 | loss 4.2573 | lr 2.39e-04 | grad norm 0.927 | step time 0.255s | avg 0.254s/step | throughput 129,039 tokens/s
+step 3240/10000 | loss 4.2905 | lr 2.38e-04 | grad norm 0.908 | step time 0.251s | avg 0.254s/step | throughput 129,145 tokens/s
+step 3250/10000 | loss 4.3398 | lr 2.38e-04 | grad norm 0.999 | step time 0.253s | avg 0.253s/step | throughput 129,322 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 65.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.4 W
+Validation loss at step 3250: 4.3892
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 3260/10000 | loss 4.2095 | lr 2.38e-04 | grad norm 0.948 | step time 0.252s | avg 0.262s/step | throughput 125,079 tokens/s
+step 3270/10000 | loss 4.3134 | lr 2.37e-04 | grad norm 0.911 | step time 0.251s | avg 0.262s/step | throughput 125,021 tokens/s
+step 3280/10000 | loss 4.3128 | lr 2.37e-04 | grad norm 0.970 | step time 0.248s | avg 0.262s/step | throughput 125,185 tokens/s
+step 3290/10000 | loss 4.3405 | lr 2.37e-04 | grad norm 0.965 | step time 0.254s | avg 0.262s/step | throughput 125,214 tokens/s
+step 3300/10000 | loss 4.2862 | lr 2.36e-04 | grad norm 0.928 | step time 0.255s | avg 0.262s/step | throughput 125,216 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 44.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 62.6 W
+step 3310/10000 | loss 4.2716 | lr 2.36e-04 | grad norm 0.955 | step time 0.252s | avg 0.253s/step | throughput 129,544 tokens/s
+step 3320/10000 | loss 4.2076 | lr 2.35e-04 | grad norm 0.921 | step time 0.251s | avg 0.253s/step | throughput 129,733 tokens/s
+step 3330/10000 | loss 4.2384 | lr 2.35e-04 | grad norm 0.928 | step time 0.253s | avg 0.252s/step | throughput 129,787 tokens/s
+step 3340/10000 | loss 4.3383 | lr 2.35e-04 | grad norm 0.968 | step time 0.255s | avg 0.253s/step | throughput 129,640 tokens/s
+step 3350/10000 | loss 4.3914 | lr 2.34e-04 | grad norm 0.910 | step time 0.252s | avg 0.253s/step | throughput 129,613 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 72 C | Power 69.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 65.6 W
+step 3360/10000 | loss 4.3175 | lr 2.34e-04 | grad norm 0.904 | step time 0.254s | avg 0.253s/step | throughput 129,683 tokens/s
+step 3370/10000 | loss 4.3678 | lr 2.34e-04 | grad norm 0.961 | step time 0.256s | avg 0.253s/step | throughput 129,693 tokens/s
+step 3380/10000 | loss 4.3769 | lr 2.33e-04 | grad norm 0.954 | step time 0.254s | avg 0.253s/step | throughput 129,590 tokens/s
+step 3390/10000 | loss 4.3254 | lr 2.33e-04 | grad norm 0.936 | step time 0.253s | avg 0.253s/step | throughput 129,725 tokens/s
+step 3400/10000 | loss 4.3074 | lr 2.33e-04 | grad norm 0.918 | step time 0.254s | avg 0.252s/step | throughput 129,799 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 73 C | Power 66.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.0 W
+step 3410/10000 | loss 4.4102 | lr 2.32e-04 | grad norm 0.943 | step time 0.250s | avg 0.252s/step | throughput 129,822 tokens/s
+step 3420/10000 | loss 4.4181 | lr 2.32e-04 | grad norm 0.916 | step time 0.249s | avg 0.253s/step | throughput 129,765 tokens/s
+step 3430/10000 | loss 4.2429 | lr 2.31e-04 | grad norm 0.904 | step time 0.252s | avg 0.252s/step | throughput 129,789 tokens/s
+step 3440/10000 | loss 4.2115 | lr 2.31e-04 | grad norm 0.931 | step time 0.253s | avg 0.252s/step | throughput 129,806 tokens/s
+step 3450/10000 | loss 4.3209 | lr 2.31e-04 | grad norm 0.902 | step time 0.257s | avg 0.253s/step | throughput 129,703 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 73 C | Power 40.6 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 77 C | Power 63.9 W
+step 3460/10000 | loss 4.2289 | lr 2.30e-04 | grad norm 0.932 | step time 0.251s | avg 0.253s/step | throughput 129,724 tokens/s
+step 3470/10000 | loss 4.1771 | lr 2.30e-04 | grad norm 0.938 | step time 0.253s | avg 0.253s/step | throughput 129,672 tokens/s
+step 3480/10000 | loss 4.3325 | lr 2.30e-04 | grad norm 1.029 | step time 0.253s | avg 0.253s/step | throughput 129,745 tokens/s
+step 3490/10000 | loss 4.2355 | lr 2.29e-04 | grad norm 0.955 | step time 0.252s | avg 0.253s/step | throughput 129,744 tokens/s
+step 3500/10000 | loss 4.3475 | lr 2.29e-04 | grad norm 0.945 | step time 0.253s | avg 0.252s/step | throughput 129,781 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 72 C | Power 64.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 76 C | Power 59.6 W
+Validation loss at step 3500: 4.3521
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 3510/10000 | loss 4.2903 | lr 2.28e-04 | grad norm 1.003 | step time 0.247s | avg 0.261s/step | throughput 125,545 tokens/s
+step 3520/10000 | loss 4.3140 | lr 2.28e-04 | grad norm 0.927 | step time 0.251s | avg 0.261s/step | throughput 125,626 tokens/s
+step 3530/10000 | loss 4.2328 | lr 2.28e-04 | grad norm 0.912 | step time 0.252s | avg 0.261s/step | throughput 125,667 tokens/s
+step 3540/10000 | loss 4.2912 | lr 2.27e-04 | grad norm 0.938 | step time 0.251s | avg 0.261s/step | throughput 125,739 tokens/s
+step 3550/10000 | loss 4.2576 | lr 2.27e-04 | grad norm 1.011 | step time 0.249s | avg 0.260s/step | throughput 125,825 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 65.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 67.1 W
+step 3560/10000 | loss 4.0858 | lr 2.27e-04 | grad norm 0.949 | step time 0.249s | avg 0.252s/step | throughput 129,984 tokens/s
+step 3570/10000 | loss 4.2078 | lr 2.26e-04 | grad norm 0.952 | step time 0.251s | avg 0.252s/step | throughput 130,001 tokens/s
+step 3580/10000 | loss 4.1900 | lr 2.26e-04 | grad norm 0.992 | step time 0.248s | avg 0.252s/step | throughput 129,964 tokens/s
+step 3590/10000 | loss 4.2018 | lr 2.25e-04 | grad norm 0.909 | step time 0.253s | avg 0.252s/step | throughput 129,854 tokens/s
+step 3600/10000 | loss 4.2562 | lr 2.25e-04 | grad norm 0.943 | step time 0.254s | avg 0.252s/step | throughput 129,850 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 65.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 64.9 W
+step 3610/10000 | loss 4.3701 | lr 2.25e-04 | grad norm 0.926 | step time 0.252s | avg 0.252s/step | throughput 129,851 tokens/s
+step 3620/10000 | loss 4.2484 | lr 2.24e-04 | grad norm 0.895 | step time 0.256s | avg 0.253s/step | throughput 129,679 tokens/s
+step 3630/10000 | loss 4.1885 | lr 2.24e-04 | grad norm 0.978 | step time 0.250s | avg 0.253s/step | throughput 129,640 tokens/s
+step 3640/10000 | loss 4.2314 | lr 2.23e-04 | grad norm 0.935 | step time 0.255s | avg 0.253s/step | throughput 129,649 tokens/s
+step 3650/10000 | loss 4.1983 | lr 2.23e-04 | grad norm 0.913 | step time 0.252s | avg 0.253s/step | throughput 129,583 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 97% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 67.5 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 66.6 W
+step 3660/10000 | loss 4.2557 | lr 2.23e-04 | grad norm 0.922 | step time 0.252s | avg 0.253s/step | throughput 129,463 tokens/s
+step 3670/10000 | loss 4.2351 | lr 2.22e-04 | grad norm 0.924 | step time 0.255s | avg 0.253s/step | throughput 129,453 tokens/s
+step 3680/10000 | loss 4.2703 | lr 2.22e-04 | grad norm 0.931 | step time 0.248s | avg 0.253s/step | throughput 129,448 tokens/s
+step 3690/10000 | loss 4.2423 | lr 2.22e-04 | grad norm 0.940 | step time 0.254s | avg 0.253s/step | throughput 129,406 tokens/s
+step 3700/10000 | loss 4.1983 | lr 2.21e-04 | grad norm 0.934 | step time 0.253s | avg 0.253s/step | throughput 129,378 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 49.1 W
+step 3710/10000 | loss 4.1194 | lr 2.21e-04 | grad norm 0.958 | step time 0.251s | avg 0.253s/step | throughput 129,559 tokens/s
+step 3720/10000 | loss 4.1908 | lr 2.20e-04 | grad norm 0.942 | step time 0.255s | avg 0.253s/step | throughput 129,580 tokens/s
+step 3730/10000 | loss 4.2591 | lr 2.20e-04 | grad norm 0.966 | step time 0.253s | avg 0.253s/step | throughput 129,576 tokens/s
+step 3740/10000 | loss 4.2668 | lr 2.20e-04 | grad norm 0.953 | step time 0.253s | avg 0.253s/step | throughput 129,651 tokens/s
+step 3750/10000 | loss 4.3478 | lr 2.19e-04 | grad norm 0.923 | step time 0.254s | avg 0.253s/step | throughput 129,547 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 66.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 69.4 W
+Validation loss at step 3750: 4.3055
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 3760/10000 | loss 4.0511 | lr 2.19e-04 | grad norm 0.966 | step time 0.254s | avg 0.262s/step | throughput 125,279 tokens/s
+step 3770/10000 | loss 4.2737 | lr 2.18e-04 | grad norm 0.896 | step time 0.255s | avg 0.262s/step | throughput 125,220 tokens/s
+step 3780/10000 | loss 4.1393 | lr 2.18e-04 | grad norm 0.935 | step time 0.249s | avg 0.262s/step | throughput 125,197 tokens/s
+step 3790/10000 | loss 4.1893 | lr 2.18e-04 | grad norm 0.878 | step time 0.254s | avg 0.262s/step | throughput 125,154 tokens/s
+step 3800/10000 | loss 4.2273 | lr 2.17e-04 | grad norm 0.900 | step time 0.255s | avg 0.262s/step | throughput 125,160 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 67.1 W
+step 3810/10000 | loss 4.1216 | lr 2.17e-04 | grad norm 0.949 | step time 0.254s | avg 0.254s/step | throughput 129,258 tokens/s
+step 3820/10000 | loss 4.2814 | lr 2.16e-04 | grad norm 0.932 | step time 0.255s | avg 0.254s/step | throughput 129,256 tokens/s
+step 3830/10000 | loss 4.2199 | lr 2.16e-04 | grad norm 0.980 | step time 0.252s | avg 0.254s/step | throughput 129,237 tokens/s
+step 3840/10000 | loss 4.2712 | lr 2.16e-04 | grad norm 0.961 | step time 0.254s | avg 0.254s/step | throughput 129,202 tokens/s
+step 3850/10000 | loss 4.2131 | lr 2.15e-04 | grad norm 1.008 | step time 0.253s | avg 0.254s/step | throughput 129,208 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 48.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 65.8 W
+step 3860/10000 | loss 4.2150 | lr 2.15e-04 | grad norm 0.924 | step time 0.253s | avg 0.254s/step | throughput 129,077 tokens/s
+step 3870/10000 | loss 4.1611 | lr 2.14e-04 | grad norm 0.995 | step time 0.253s | avg 0.253s/step | throughput 129,266 tokens/s
+step 3880/10000 | loss 4.2387 | lr 2.14e-04 | grad norm 0.965 | step time 0.254s | avg 0.253s/step | throughput 129,285 tokens/s
+step 3890/10000 | loss 4.1232 | lr 2.14e-04 | grad norm 0.894 | step time 0.254s | avg 0.254s/step | throughput 129,210 tokens/s
+step 3900/10000 | loss 4.0221 | lr 2.13e-04 | grad norm 0.937 | step time 0.254s | avg 0.254s/step | throughput 129,230 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 45.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.4 W
+step 3910/10000 | loss 4.0857 | lr 2.13e-04 | grad norm 0.971 | step time 0.254s | avg 0.253s/step | throughput 129,326 tokens/s
+step 3920/10000 | loss 4.1986 | lr 2.12e-04 | grad norm 0.925 | step time 0.255s | avg 0.254s/step | throughput 129,176 tokens/s
+step 3930/10000 | loss 4.3231 | lr 2.12e-04 | grad norm 0.965 | step time 0.254s | avg 0.254s/step | throughput 129,102 tokens/s
+step 3940/10000 | loss 4.1849 | lr 2.12e-04 | grad norm 0.977 | step time 0.252s | avg 0.254s/step | throughput 129,249 tokens/s
+step 3950/10000 | loss 4.1835 | lr 2.11e-04 | grad norm 0.932 | step time 0.252s | avg 0.253s/step | throughput 129,289 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 73 C | Power 68.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 77 C | Power 49.6 W
+step 3960/10000 | loss 4.1673 | lr 2.11e-04 | grad norm 0.925 | step time 0.254s | avg 0.253s/step | throughput 129,441 tokens/s
+step 3970/10000 | loss 4.1783 | lr 2.10e-04 | grad norm 0.978 | step time 0.254s | avg 0.253s/step | throughput 129,410 tokens/s
+step 3980/10000 | loss 4.1696 | lr 2.10e-04 | grad norm 0.939 | step time 0.254s | avg 0.253s/step | throughput 129,449 tokens/s
+step 3990/10000 | loss 4.1259 | lr 2.10e-04 | grad norm 0.934 | step time 0.251s | avg 0.253s/step | throughput 129,337 tokens/s
+step 4000/10000 | loss 4.2385 | lr 2.09e-04 | grad norm 0.942 | step time 0.254s | avg 0.253s/step | throughput 129,357 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 81% | Temp 73 C | Power 43.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 63.7 W
+Validation loss at step 4000: 4.2474
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 4010/10000 | loss 4.2189 | lr 2.09e-04 | grad norm 0.938 | step time 0.253s | avg 0.262s/step | throughput 124,936 tokens/s
+step 4020/10000 | loss 4.1252 | lr 2.08e-04 | grad norm 0.954 | step time 0.253s | avg 0.262s/step | throughput 124,938 tokens/s
+step 4030/10000 | loss 4.1956 | lr 2.08e-04 | grad norm 0.899 | step time 0.254s | avg 0.262s/step | throughput 124,860 tokens/s
+step 4040/10000 | loss 4.1732 | lr 2.08e-04 | grad norm 0.952 | step time 0.254s | avg 0.262s/step | throughput 124,839 tokens/s
+step 4050/10000 | loss 4.1558 | lr 2.07e-04 | grad norm 0.915 | step time 0.253s | avg 0.263s/step | throughput 124,758 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 70.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 52.0 W
+step 4060/10000 | loss 4.0930 | lr 2.07e-04 | grad norm 0.900 | step time 0.254s | avg 0.254s/step | throughput 129,035 tokens/s
+step 4070/10000 | loss 4.1961 | lr 2.06e-04 | grad norm 0.912 | step time 0.253s | avg 0.254s/step | throughput 129,026 tokens/s
+step 4080/10000 | loss 4.1572 | lr 2.06e-04 | grad norm 0.955 | step time 0.256s | avg 0.254s/step | throughput 129,005 tokens/s
+step 4090/10000 | loss 4.1425 | lr 2.06e-04 | grad norm 0.943 | step time 0.255s | avg 0.254s/step | throughput 128,978 tokens/s
+step 4100/10000 | loss 4.1236 | lr 2.05e-04 | grad norm 0.906 | step time 0.253s | avg 0.254s/step | throughput 128,967 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 67.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 61.2 W
+step 4110/10000 | loss 4.2170 | lr 2.05e-04 | grad norm 0.937 | step time 0.253s | avg 0.254s/step | throughput 128,840 tokens/s
+step 4120/10000 | loss 4.0710 | lr 2.04e-04 | grad norm 0.899 | step time 0.253s | avg 0.254s/step | throughput 128,818 tokens/s
+step 4130/10000 | loss 4.1084 | lr 2.04e-04 | grad norm 0.909 | step time 0.254s | avg 0.254s/step | throughput 128,914 tokens/s
+step 4140/10000 | loss 4.0565 | lr 2.03e-04 | grad norm 0.948 | step time 0.252s | avg 0.254s/step | throughput 128,966 tokens/s
+step 4150/10000 | loss 4.1415 | lr 2.03e-04 | grad norm 0.979 | step time 0.252s | avg 0.254s/step | throughput 128,954 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 73 C | Power 63.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 65.1 W
+step 4160/10000 | loss 4.0610 | lr 2.03e-04 | grad norm 0.917 | step time 0.254s | avg 0.254s/step | throughput 129,038 tokens/s
+step 4170/10000 | loss 4.1962 | lr 2.02e-04 | grad norm 0.948 | step time 0.254s | avg 0.254s/step | throughput 129,031 tokens/s
+step 4180/10000 | loss 4.0926 | lr 2.02e-04 | grad norm 0.947 | step time 0.253s | avg 0.254s/step | throughput 128,934 tokens/s
+step 4190/10000 | loss 4.1527 | lr 2.01e-04 | grad norm 0.953 | step time 0.255s | avg 0.254s/step | throughput 128,905 tokens/s
+step 4200/10000 | loss 4.0978 | lr 2.01e-04 | grad norm 0.973 | step time 0.254s | avg 0.254s/step | throughput 128,967 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 63.5 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 77 C | Power 66.6 W
+step 4210/10000 | loss 4.0071 | lr 2.01e-04 | grad norm 0.927 | step time 0.254s | avg 0.254s/step | throughput 128,898 tokens/s
+step 4220/10000 | loss 4.1279 | lr 2.00e-04 | grad norm 0.933 | step time 0.250s | avg 0.254s/step | throughput 128,959 tokens/s
+step 4230/10000 | loss 4.2147 | lr 2.00e-04 | grad norm 0.931 | step time 0.255s | avg 0.254s/step | throughput 128,964 tokens/s
+step 4240/10000 | loss 4.1433 | lr 1.99e-04 | grad norm 0.915 | step time 0.252s | avg 0.254s/step | throughput 128,913 tokens/s
+step 4250/10000 | loss 4.1121 | lr 1.99e-04 | grad norm 0.937 | step time 0.255s | avg 0.254s/step | throughput 128,847 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 73 C | Power 62.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 66.9 W
+Validation loss at step 4250: 4.1758
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 4260/10000 | loss 4.0598 | lr 1.99e-04 | grad norm 0.892 | step time 0.256s | avg 0.262s/step | throughput 124,846 tokens/s
+step 4270/10000 | loss 4.2340 | lr 1.98e-04 | grad norm 0.915 | step time 0.254s | avg 0.262s/step | throughput 124,852 tokens/s
+step 4280/10000 | loss 4.1445 | lr 1.98e-04 | grad norm 0.945 | step time 0.254s | avg 0.262s/step | throughput 124,861 tokens/s
+step 4290/10000 | loss 4.1608 | lr 1.97e-04 | grad norm 0.943 | step time 0.254s | avg 0.262s/step | throughput 124,908 tokens/s
+step 4300/10000 | loss 4.0655 | lr 1.97e-04 | grad norm 0.999 | step time 0.254s | avg 0.262s/step | throughput 124,913 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 45.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.3 W
+step 4310/10000 | loss 4.0130 | lr 1.96e-04 | grad norm 0.934 | step time 0.256s | avg 0.254s/step | throughput 129,026 tokens/s
+step 4320/10000 | loss 4.0863 | lr 1.96e-04 | grad norm 0.919 | step time 0.255s | avg 0.254s/step | throughput 128,976 tokens/s
+step 4330/10000 | loss 4.0885 | lr 1.96e-04 | grad norm 0.929 | step time 0.253s | avg 0.254s/step | throughput 128,983 tokens/s
+step 4340/10000 | loss 4.2283 | lr 1.95e-04 | grad norm 0.931 | step time 0.253s | avg 0.254s/step | throughput 129,064 tokens/s
+step 4350/10000 | loss 4.1878 | lr 1.95e-04 | grad norm 0.967 | step time 0.255s | avg 0.254s/step | throughput 129,059 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 47.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 59.9 W
+step 4360/10000 | loss 4.1293 | lr 1.94e-04 | grad norm 0.947 | step time 0.254s | avg 0.254s/step | throughput 129,068 tokens/s
+step 4370/10000 | loss 4.1410 | lr 1.94e-04 | grad norm 0.906 | step time 0.253s | avg 0.254s/step | throughput 129,178 tokens/s
+step 4380/10000 | loss 4.0902 | lr 1.94e-04 | grad norm 0.924 | step time 0.249s | avg 0.254s/step | throughput 129,253 tokens/s
+step 4390/10000 | loss 4.0974 | lr 1.93e-04 | grad norm 0.942 | step time 0.253s | avg 0.254s/step | throughput 129,203 tokens/s
+step 4400/10000 | loss 4.1084 | lr 1.93e-04 | grad norm 0.915 | step time 0.254s | avg 0.254s/step | throughput 129,211 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 66.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 77 C | Power 66.0 W
+step 4410/10000 | loss 4.0936 | lr 1.92e-04 | grad norm 0.937 | step time 0.255s | avg 0.254s/step | throughput 129,186 tokens/s
+step 4420/10000 | loss 4.0411 | lr 1.92e-04 | grad norm 0.914 | step time 0.253s | avg 0.254s/step | throughput 129,110 tokens/s
+step 4430/10000 | loss 4.1057 | lr 1.91e-04 | grad norm 0.936 | step time 0.254s | avg 0.254s/step | throughput 129,038 tokens/s
+step 4440/10000 | loss 4.0942 | lr 1.91e-04 | grad norm 1.007 | step time 0.255s | avg 0.254s/step | throughput 129,006 tokens/s
+step 4450/10000 | loss 4.1430 | lr 1.91e-04 | grad norm 0.913 | step time 0.254s | avg 0.254s/step | throughput 129,127 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 65.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 65.6 W
+step 4460/10000 | loss 4.2761 | lr 1.90e-04 | grad norm 0.923 | step time 0.254s | avg 0.254s/step | throughput 129,205 tokens/s
+step 4470/10000 | loss 4.1213 | lr 1.90e-04 | grad norm 0.954 | step time 0.254s | avg 0.254s/step | throughput 129,173 tokens/s
+step 4480/10000 | loss 4.1178 | lr 1.89e-04 | grad norm 0.908 | step time 0.255s | avg 0.254s/step | throughput 129,088 tokens/s
+step 4490/10000 | loss 4.1750 | lr 1.89e-04 | grad norm 0.986 | step time 0.254s | avg 0.254s/step | throughput 129,118 tokens/s
+step 4500/10000 | loss 4.1627 | lr 1.88e-04 | grad norm 0.931 | step time 0.252s | avg 0.254s/step | throughput 129,038 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 63.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 64.0 W
+Validation loss at step 4500: 4.2208
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 4510/10000 | loss 4.1137 | lr 1.88e-04 | grad norm 0.945 | step time 0.255s | avg 0.263s/step | throughput 124,706 tokens/s
+step 4520/10000 | loss 4.1596 | lr 1.88e-04 | grad norm 0.955 | step time 0.254s | avg 0.263s/step | throughput 124,671 tokens/s
+step 4530/10000 | loss 4.1012 | lr 1.87e-04 | grad norm 0.975 | step time 0.252s | avg 0.263s/step | throughput 124,732 tokens/s
+step 4540/10000 | loss 3.9548 | lr 1.87e-04 | grad norm 0.971 | step time 0.254s | avg 0.263s/step | throughput 124,669 tokens/s
+step 4550/10000 | loss 4.1079 | lr 1.86e-04 | grad norm 0.939 | step time 0.257s | avg 0.263s/step | throughput 124,647 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 73 C | Power 44.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 65.5 W
+step 4560/10000 | loss 4.1144 | lr 1.86e-04 | grad norm 0.961 | step time 0.253s | avg 0.254s/step | throughput 128,951 tokens/s
+step 4570/10000 | loss 4.1109 | lr 1.86e-04 | grad norm 0.911 | step time 0.253s | avg 0.254s/step | throughput 128,982 tokens/s
+step 4580/10000 | loss 4.1547 | lr 1.85e-04 | grad norm 0.903 | step time 0.252s | avg 0.254s/step | throughput 129,073 tokens/s
+step 4590/10000 | loss 4.1843 | lr 1.85e-04 | grad norm 0.912 | step time 0.252s | avg 0.254s/step | throughput 129,108 tokens/s
+step 4600/10000 | loss 4.0306 | lr 1.84e-04 | grad norm 0.926 | step time 0.256s | avg 0.254s/step | throughput 129,103 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 47.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 45.4 W
+step 4610/10000 | loss 4.0999 | lr 1.84e-04 | grad norm 0.990 | step time 0.251s | avg 0.254s/step | throughput 129,115 tokens/s
+step 4620/10000 | loss 4.1737 | lr 1.83e-04 | grad norm 0.937 | step time 0.254s | avg 0.253s/step | throughput 129,288 tokens/s
+step 4630/10000 | loss 4.0709 | lr 1.83e-04 | grad norm 0.926 | step time 0.250s | avg 0.254s/step | throughput 129,246 tokens/s
+step 4640/10000 | loss 4.1388 | lr 1.83e-04 | grad norm 0.924 | step time 0.253s | avg 0.253s/step | throughput 129,376 tokens/s
+step 4650/10000 | loss 4.1866 | lr 1.82e-04 | grad norm 0.971 | step time 0.254s | avg 0.253s/step | throughput 129,469 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 72 C | Power 63.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 67.0 W
+step 4660/10000 | loss 4.0872 | lr 1.82e-04 | grad norm 0.939 | step time 0.253s | avg 0.253s/step | throughput 129,597 tokens/s
+step 4670/10000 | loss 4.0992 | lr 1.81e-04 | grad norm 0.942 | step time 0.249s | avg 0.253s/step | throughput 129,537 tokens/s
+step 4680/10000 | loss 4.0521 | lr 1.81e-04 | grad norm 0.872 | step time 0.253s | avg 0.253s/step | throughput 129,621 tokens/s
+step 4690/10000 | loss 3.9320 | lr 1.80e-04 | grad norm 0.909 | step time 0.253s | avg 0.253s/step | throughput 129,669 tokens/s
+step 4700/10000 | loss 4.0466 | lr 1.80e-04 | grad norm 0.911 | step time 0.255s | avg 0.253s/step | throughput 129,670 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 55.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 49.4 W
+step 4710/10000 | loss 4.1107 | lr 1.80e-04 | grad norm 0.951 | step time 0.254s | avg 0.253s/step | throughput 129,463 tokens/s
+step 4720/10000 | loss 4.0649 | lr 1.79e-04 | grad norm 0.982 | step time 0.252s | avg 0.253s/step | throughput 129,493 tokens/s
+step 4730/10000 | loss 4.0869 | lr 1.79e-04 | grad norm 0.901 | step time 0.251s | avg 0.253s/step | throughput 129,470 tokens/s
+step 4740/10000 | loss 4.0547 | lr 1.78e-04 | grad norm 0.911 | step time 0.251s | avg 0.253s/step | throughput 129,443 tokens/s
+step 4750/10000 | loss 4.1136 | lr 1.78e-04 | grad norm 0.967 | step time 0.253s | avg 0.253s/step | throughput 129,503 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 67.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 65.3 W
+Validation loss at step 4750: 4.1566
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 4760/10000 | loss 4.0484 | lr 1.77e-04 | grad norm 0.882 | step time 0.251s | avg 0.261s/step | throughput 125,405 tokens/s
+step 4770/10000 | loss 4.0139 | lr 1.77e-04 | grad norm 0.965 | step time 0.255s | avg 0.261s/step | throughput 125,347 tokens/s
+step 4780/10000 | loss 4.0440 | lr 1.77e-04 | grad norm 0.893 | step time 0.252s | avg 0.261s/step | throughput 125,345 tokens/s
+step 4790/10000 | loss 4.0783 | lr 1.76e-04 | grad norm 0.918 | step time 0.254s | avg 0.262s/step | throughput 125,299 tokens/s
+step 4800/10000 | loss 4.0550 | lr 1.76e-04 | grad norm 0.951 | step time 0.253s | avg 0.262s/step | throughput 125,307 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 66.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 62.2 W
+step 4810/10000 | loss 4.1539 | lr 1.75e-04 | grad norm 0.964 | step time 0.252s | avg 0.253s/step | throughput 129,588 tokens/s
+step 4820/10000 | loss 3.9617 | lr 1.75e-04 | grad norm 0.943 | step time 0.254s | avg 0.253s/step | throughput 129,629 tokens/s
+step 4830/10000 | loss 4.0094 | lr 1.74e-04 | grad norm 0.934 | step time 0.253s | avg 0.253s/step | throughput 129,611 tokens/s
+step 4840/10000 | loss 4.1349 | lr 1.74e-04 | grad norm 0.981 | step time 0.252s | avg 0.253s/step | throughput 129,701 tokens/s
+step 4850/10000 | loss 4.0781 | lr 1.74e-04 | grad norm 0.959 | step time 0.253s | avg 0.253s/step | throughput 129,658 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 72 C | Power 65.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 62.9 W
+step 4860/10000 | loss 3.9697 | lr 1.73e-04 | grad norm 0.957 | step time 0.254s | avg 0.253s/step | throughput 129,589 tokens/s
+step 4870/10000 | loss 4.1580 | lr 1.73e-04 | grad norm 0.928 | step time 0.252s | avg 0.253s/step | throughput 129,613 tokens/s
+step 4880/10000 | loss 4.1341 | lr 1.72e-04 | grad norm 0.929 | step time 0.251s | avg 0.253s/step | throughput 129,697 tokens/s
+step 4890/10000 | loss 4.0108 | lr 1.72e-04 | grad norm 0.903 | step time 0.253s | avg 0.253s/step | throughput 129,679 tokens/s
+step 4900/10000 | loss 4.0840 | lr 1.71e-04 | grad norm 0.928 | step time 0.252s | avg 0.253s/step | throughput 129,739 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 72 C | Power 43.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 61.7 W
+step 4910/10000 | loss 4.0895 | lr 1.71e-04 | grad norm 0.970 | step time 0.252s | avg 0.253s/step | throughput 129,609 tokens/s
+step 4920/10000 | loss 4.0531 | lr 1.71e-04 | grad norm 0.940 | step time 0.252s | avg 0.253s/step | throughput 129,683 tokens/s
+step 4930/10000 | loss 4.0622 | lr 1.70e-04 | grad norm 0.922 | step time 0.255s | avg 0.253s/step | throughput 129,623 tokens/s
+step 4940/10000 | loss 4.0205 | lr 1.70e-04 | grad norm 0.951 | step time 0.253s | avg 0.253s/step | throughput 129,647 tokens/s
+step 4950/10000 | loss 4.0897 | lr 1.69e-04 | grad norm 0.953 | step time 0.252s | avg 0.253s/step | throughput 129,696 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 72 C | Power 67.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 67.1 W
+step 4960/10000 | loss 4.0519 | lr 1.69e-04 | grad norm 0.918 | step time 0.252s | avg 0.252s/step | throughput 129,919 tokens/s
+step 4970/10000 | loss 3.9040 | lr 1.68e-04 | grad norm 0.937 | step time 0.256s | avg 0.252s/step | throughput 129,816 tokens/s
+step 4980/10000 | loss 4.0247 | lr 1.68e-04 | grad norm 0.940 | step time 0.252s | avg 0.252s/step | throughput 130,006 tokens/s
+step 4990/10000 | loss 4.0805 | lr 1.68e-04 | grad norm 0.970 | step time 0.253s | avg 0.252s/step | throughput 129,921 tokens/s
+step 5000/10000 | loss 4.0646 | lr 1.67e-04 | grad norm 1.025 | step time 0.253s | avg 0.252s/step | throughput 129,894 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 64.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 76 C | Power 63.4 W
+Validation loss at step 5000: 4.1338
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 5010/10000 | loss 4.0094 | lr 1.67e-04 | grad norm 0.915 | step time 0.253s | avg 0.261s/step | throughput 125,680 tokens/s
+step 5020/10000 | loss 4.0556 | lr 1.66e-04 | grad norm 1.014 | step time 0.251s | avg 0.261s/step | throughput 125,741 tokens/s
+step 5030/10000 | loss 4.0985 | lr 1.66e-04 | grad norm 0.942 | step time 0.252s | avg 0.261s/step | throughput 125,607 tokens/s
+step 5040/10000 | loss 4.0422 | lr 1.65e-04 | grad norm 1.039 | step time 0.252s | avg 0.261s/step | throughput 125,629 tokens/s
+step 5050/10000 | loss 4.0622 | lr 1.65e-04 | grad norm 0.958 | step time 0.249s | avg 0.261s/step | throughput 125,570 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 41.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 51.5 W
+step 5060/10000 | loss 4.0022 | lr 1.65e-04 | grad norm 0.930 | step time 0.253s | avg 0.253s/step | throughput 129,549 tokens/s
+step 5070/10000 | loss 4.0106 | lr 1.64e-04 | grad norm 0.985 | step time 0.253s | avg 0.253s/step | throughput 129,520 tokens/s
+step 5080/10000 | loss 4.1216 | lr 1.64e-04 | grad norm 0.929 | step time 0.253s | avg 0.253s/step | throughput 129,407 tokens/s
+step 5090/10000 | loss 4.1478 | lr 1.63e-04 | grad norm 0.951 | step time 0.253s | avg 0.253s/step | throughput 129,368 tokens/s
+step 5100/10000 | loss 4.0929 | lr 1.63e-04 | grad norm 0.935 | step time 0.257s | avg 0.254s/step | throughput 129,229 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 63.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 65.2 W
+step 5110/10000 | loss 4.0575 | lr 1.62e-04 | grad norm 0.962 | step time 0.255s | avg 0.253s/step | throughput 129,383 tokens/s
+step 5120/10000 | loss 4.0796 | lr 1.62e-04 | grad norm 0.941 | step time 0.249s | avg 0.253s/step | throughput 129,427 tokens/s
+step 5130/10000 | loss 3.9878 | lr 1.62e-04 | grad norm 0.946 | step time 0.254s | avg 0.253s/step | throughput 129,510 tokens/s
+step 5140/10000 | loss 4.0846 | lr 1.61e-04 | grad norm 0.963 | step time 0.255s | avg 0.253s/step | throughput 129,432 tokens/s
+step 5150/10000 | loss 4.0066 | lr 1.61e-04 | grad norm 0.958 | step time 0.254s | avg 0.253s/step | throughput 129,517 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 65.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 64.3 W
+step 5160/10000 | loss 3.9787 | lr 1.60e-04 | grad norm 0.940 | step time 0.254s | avg 0.253s/step | throughput 129,405 tokens/s
+step 5170/10000 | loss 3.9317 | lr 1.60e-04 | grad norm 0.931 | step time 0.252s | avg 0.254s/step | throughput 129,239 tokens/s
+step 5180/10000 | loss 4.0709 | lr 1.59e-04 | grad norm 0.971 | step time 0.255s | avg 0.254s/step | throughput 129,079 tokens/s
+step 5190/10000 | loss 4.0328 | lr 1.59e-04 | grad norm 0.974 | step time 0.252s | avg 0.254s/step | throughput 129,122 tokens/s
+step 5200/10000 | loss 4.0174 | lr 1.59e-04 | grad norm 0.954 | step time 0.256s | avg 0.254s/step | throughput 129,000 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 73 C | Power 66.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.5 W
+step 5210/10000 | loss 4.0517 | lr 1.58e-04 | grad norm 0.988 | step time 0.254s | avg 0.254s/step | throughput 129,081 tokens/s
+step 5220/10000 | loss 4.0195 | lr 1.58e-04 | grad norm 0.902 | step time 0.252s | avg 0.254s/step | throughput 129,057 tokens/s
+step 5230/10000 | loss 3.9840 | lr 1.57e-04 | grad norm 0.903 | step time 0.256s | avg 0.254s/step | throughput 129,102 tokens/s
+step 5240/10000 | loss 3.9269 | lr 1.57e-04 | grad norm 0.958 | step time 0.254s | avg 0.254s/step | throughput 129,000 tokens/s
+step 5250/10000 | loss 4.0508 | lr 1.56e-04 | grad norm 0.973 | step time 0.255s | avg 0.254s/step | throughput 129,077 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 66.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 66.7 W
+Validation loss at step 5250: 4.1197
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 5260/10000 | loss 3.9202 | lr 1.56e-04 | grad norm 0.922 | step time 0.255s | avg 0.262s/step | throughput 124,833 tokens/s
+step 5270/10000 | loss 3.9905 | lr 1.56e-04 | grad norm 0.929 | step time 0.254s | avg 0.262s/step | throughput 124,832 tokens/s
+step 5280/10000 | loss 3.9389 | lr 1.55e-04 | grad norm 0.936 | step time 0.254s | avg 0.262s/step | throughput 124,876 tokens/s
+step 5290/10000 | loss 4.0153 | lr 1.55e-04 | grad norm 0.965 | step time 0.250s | avg 0.262s/step | throughput 124,944 tokens/s
+step 5300/10000 | loss 4.0134 | lr 1.54e-04 | grad norm 0.935 | step time 0.252s | avg 0.262s/step | throughput 124,917 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 67.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.1 W
+step 5310/10000 | loss 3.9145 | lr 1.54e-04 | grad norm 0.919 | step time 0.252s | avg 0.254s/step | throughput 129,132 tokens/s
+step 5320/10000 | loss 4.1141 | lr 1.53e-04 | grad norm 0.962 | step time 0.254s | avg 0.254s/step | throughput 129,176 tokens/s
+step 5330/10000 | loss 3.9280 | lr 1.53e-04 | grad norm 0.943 | step time 0.250s | avg 0.254s/step | throughput 129,170 tokens/s
+step 5340/10000 | loss 3.9524 | lr 1.53e-04 | grad norm 0.958 | step time 0.252s | avg 0.254s/step | throughput 129,097 tokens/s
+step 5350/10000 | loss 4.0689 | lr 1.52e-04 | grad norm 0.975 | step time 0.254s | avg 0.254s/step | throughput 129,077 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 64.9 W
+step 5360/10000 | loss 3.9092 | lr 1.52e-04 | grad norm 0.956 | step time 0.254s | avg 0.254s/step | throughput 129,002 tokens/s
+step 5370/10000 | loss 4.1712 | lr 1.51e-04 | grad norm 0.949 | step time 0.254s | avg 0.254s/step | throughput 129,058 tokens/s
+step 5380/10000 | loss 3.9832 | lr 1.51e-04 | grad norm 0.925 | step time 0.254s | avg 0.254s/step | throughput 128,997 tokens/s
+step 5390/10000 | loss 4.0001 | lr 1.51e-04 | grad norm 0.980 | step time 0.253s | avg 0.254s/step | throughput 129,020 tokens/s
+step 5400/10000 | loss 3.8559 | lr 1.50e-04 | grad norm 0.941 | step time 0.253s | avg 0.254s/step | throughput 129,041 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 62.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 64.1 W
+step 5410/10000 | loss 4.0669 | lr 1.50e-04 | grad norm 0.943 | step time 0.254s | avg 0.254s/step | throughput 128,926 tokens/s
+step 5420/10000 | loss 4.0127 | lr 1.49e-04 | grad norm 0.969 | step time 0.256s | avg 0.254s/step | throughput 128,839 tokens/s
+step 5430/10000 | loss 4.1131 | lr 1.49e-04 | grad norm 0.949 | step time 0.254s | avg 0.254s/step | throughput 128,824 tokens/s
+step 5440/10000 | loss 4.0824 | lr 1.48e-04 | grad norm 0.999 | step time 0.253s | avg 0.254s/step | throughput 128,821 tokens/s
+step 5450/10000 | loss 4.0064 | lr 1.48e-04 | grad norm 0.935 | step time 0.252s | avg 0.254s/step | throughput 128,808 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 68.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 64.9 W
+step 5460/10000 | loss 4.0906 | lr 1.48e-04 | grad norm 0.960 | step time 0.253s | avg 0.254s/step | throughput 128,822 tokens/s
+step 5470/10000 | loss 4.0498 | lr 1.47e-04 | grad norm 0.968 | step time 0.254s | avg 0.254s/step | throughput 128,834 tokens/s
+step 5480/10000 | loss 4.0028 | lr 1.47e-04 | grad norm 0.936 | step time 0.253s | avg 0.254s/step | throughput 128,953 tokens/s
+step 5490/10000 | loss 3.9632 | lr 1.46e-04 | grad norm 0.930 | step time 0.254s | avg 0.254s/step | throughput 128,960 tokens/s
+step 5500/10000 | loss 4.1061 | lr 1.46e-04 | grad norm 0.956 | step time 0.253s | avg 0.254s/step | throughput 128,999 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 65.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.0 W
+Validation loss at step 5500: 4.0794
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 5510/10000 | loss 3.9733 | lr 1.45e-04 | grad norm 0.948 | step time 0.253s | avg 0.262s/step | throughput 125,007 tokens/s
+step 5520/10000 | loss 3.9305 | lr 1.45e-04 | grad norm 0.943 | step time 0.251s | avg 0.262s/step | throughput 125,039 tokens/s
+step 5530/10000 | loss 4.0393 | lr 1.45e-04 | grad norm 0.940 | step time 0.255s | avg 0.262s/step | throughput 125,064 tokens/s
+step 5540/10000 | loss 4.0106 | lr 1.44e-04 | grad norm 0.987 | step time 0.254s | avg 0.262s/step | throughput 125,147 tokens/s
+step 5550/10000 | loss 4.0070 | lr 1.44e-04 | grad norm 0.966 | step time 0.252s | avg 0.262s/step | throughput 125,297 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 64.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 66.3 W
+step 5560/10000 | loss 4.0582 | lr 1.43e-04 | grad norm 0.961 | step time 0.254s | avg 0.253s/step | throughput 129,595 tokens/s
+step 5570/10000 | loss 4.0423 | lr 1.43e-04 | grad norm 0.945 | step time 0.256s | avg 0.253s/step | throughput 129,687 tokens/s
+step 5580/10000 | loss 4.0089 | lr 1.42e-04 | grad norm 0.943 | step time 0.255s | avg 0.253s/step | throughput 129,672 tokens/s
+step 5590/10000 | loss 4.0108 | lr 1.42e-04 | grad norm 0.947 | step time 0.251s | avg 0.253s/step | throughput 129,749 tokens/s
+step 5600/10000 | loss 4.0066 | lr 1.42e-04 | grad norm 0.982 | step time 0.249s | avg 0.253s/step | throughput 129,710 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 67.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 65.9 W
+step 5610/10000 | loss 3.8980 | lr 1.41e-04 | grad norm 0.932 | step time 0.255s | avg 0.253s/step | throughput 129,763 tokens/s
+step 5620/10000 | loss 3.9880 | lr 1.41e-04 | grad norm 0.948 | step time 0.250s | avg 0.253s/step | throughput 129,721 tokens/s
+step 5630/10000 | loss 3.9907 | lr 1.40e-04 | grad norm 0.950 | step time 0.252s | avg 0.253s/step | throughput 129,737 tokens/s
+step 5640/10000 | loss 3.9456 | lr 1.40e-04 | grad norm 0.967 | step time 0.255s | avg 0.253s/step | throughput 129,730 tokens/s
+step 5650/10000 | loss 3.9725 | lr 1.39e-04 | grad norm 0.962 | step time 0.250s | avg 0.253s/step | throughput 129,754 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 96% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 67.2 W
+  GPU 1: Tesla T4 | Util 97% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.6 W
+step 5660/10000 | loss 3.9567 | lr 1.39e-04 | grad norm 0.958 | step time 0.253s | avg 0.253s/step | throughput 129,705 tokens/s
+step 5670/10000 | loss 4.0660 | lr 1.39e-04 | grad norm 0.974 | step time 0.253s | avg 0.253s/step | throughput 129,683 tokens/s
+step 5680/10000 | loss 4.0147 | lr 1.38e-04 | grad norm 0.984 | step time 0.254s | avg 0.253s/step | throughput 129,668 tokens/s
+step 5690/10000 | loss 4.0060 | lr 1.38e-04 | grad norm 0.949 | step time 0.253s | avg 0.253s/step | throughput 129,638 tokens/s
+step 5700/10000 | loss 4.1012 | lr 1.37e-04 | grad norm 0.992 | step time 0.256s | avg 0.253s/step | throughput 129,578 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 69.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 69% | Temp 76 C | Power 45.6 W
+step 5710/10000 | loss 3.9570 | lr 1.37e-04 | grad norm 0.984 | step time 0.251s | avg 0.253s/step | throughput 129,491 tokens/s
+step 5720/10000 | loss 4.1082 | lr 1.37e-04 | grad norm 0.935 | step time 0.253s | avg 0.253s/step | throughput 129,516 tokens/s
+step 5730/10000 | loss 4.0198 | lr 1.36e-04 | grad norm 0.994 | step time 0.251s | avg 0.253s/step | throughput 129,531 tokens/s
+step 5740/10000 | loss 4.0166 | lr 1.36e-04 | grad norm 0.957 | step time 0.254s | avg 0.253s/step | throughput 129,475 tokens/s
+step 5750/10000 | loss 3.9973 | lr 1.35e-04 | grad norm 0.946 | step time 0.252s | avg 0.253s/step | throughput 129,558 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 48.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 76 C | Power 69.7 W
+Validation loss at step 5750: 4.0724
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 5760/10000 | loss 4.0380 | lr 1.35e-04 | grad norm 0.940 | step time 0.252s | avg 0.261s/step | throughput 125,457 tokens/s
+step 5770/10000 | loss 3.9154 | lr 1.34e-04 | grad norm 0.951 | step time 0.252s | avg 0.261s/step | throughput 125,372 tokens/s
+step 5780/10000 | loss 4.0559 | lr 1.34e-04 | grad norm 0.966 | step time 0.251s | avg 0.261s/step | throughput 125,432 tokens/s
+step 5790/10000 | loss 3.9316 | lr 1.34e-04 | grad norm 0.945 | step time 0.252s | avg 0.261s/step | throughput 125,639 tokens/s
+step 5800/10000 | loss 4.0069 | lr 1.33e-04 | grad norm 0.927 | step time 0.253s | avg 0.261s/step | throughput 125,610 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 72 C | Power 65.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 42.7 W
+step 5810/10000 | loss 4.0337 | lr 1.33e-04 | grad norm 0.958 | step time 0.251s | avg 0.253s/step | throughput 129,760 tokens/s
+step 5820/10000 | loss 3.9900 | lr 1.32e-04 | grad norm 0.987 | step time 0.251s | avg 0.252s/step | throughput 130,002 tokens/s
+step 5830/10000 | loss 4.0663 | lr 1.32e-04 | grad norm 0.937 | step time 0.251s | avg 0.252s/step | throughput 129,975 tokens/s
+step 5840/10000 | loss 3.9205 | lr 1.32e-04 | grad norm 0.930 | step time 0.252s | avg 0.252s/step | throughput 129,822 tokens/s
+step 5850/10000 | loss 4.0218 | lr 1.31e-04 | grad norm 0.966 | step time 0.252s | avg 0.252s/step | throughput 129,821 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 66.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 55.5 W
+step 5860/10000 | loss 3.9996 | lr 1.31e-04 | grad norm 0.975 | step time 0.252s | avg 0.253s/step | throughput 129,739 tokens/s
+step 5870/10000 | loss 4.0496 | lr 1.30e-04 | grad norm 0.974 | step time 0.252s | avg 0.253s/step | throughput 129,679 tokens/s
+step 5880/10000 | loss 3.9716 | lr 1.30e-04 | grad norm 0.981 | step time 0.253s | avg 0.253s/step | throughput 129,703 tokens/s
+step 5890/10000 | loss 4.0862 | lr 1.29e-04 | grad norm 1.009 | step time 0.254s | avg 0.253s/step | throughput 129,557 tokens/s
+step 5900/10000 | loss 3.9369 | lr 1.29e-04 | grad norm 0.991 | step time 0.252s | avg 0.253s/step | throughput 129,504 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 47.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 63.4 W
+step 5910/10000 | loss 3.9670 | lr 1.29e-04 | grad norm 0.947 | step time 0.252s | avg 0.253s/step | throughput 129,471 tokens/s
+step 5920/10000 | loss 3.9445 | lr 1.28e-04 | grad norm 0.977 | step time 0.253s | avg 0.253s/step | throughput 129,365 tokens/s
+step 5930/10000 | loss 3.8596 | lr 1.28e-04 | grad norm 1.019 | step time 0.255s | avg 0.254s/step | throughput 129,159 tokens/s
+step 5940/10000 | loss 4.1228 | lr 1.27e-04 | grad norm 0.959 | step time 0.253s | avg 0.253s/step | throughput 129,297 tokens/s
+step 5950/10000 | loss 4.0259 | lr 1.27e-04 | grad norm 0.964 | step time 0.253s | avg 0.254s/step | throughput 129,226 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 63.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 65.2 W
+step 5960/10000 | loss 3.9980 | lr 1.27e-04 | grad norm 0.986 | step time 0.253s | avg 0.254s/step | throughput 129,201 tokens/s
+step 5970/10000 | loss 4.0444 | lr 1.26e-04 | grad norm 0.971 | step time 0.257s | avg 0.254s/step | throughput 129,104 tokens/s
+step 5980/10000 | loss 3.9242 | lr 1.26e-04 | grad norm 1.022 | step time 0.255s | avg 0.254s/step | throughput 129,138 tokens/s
+step 5990/10000 | loss 3.8587 | lr 1.25e-04 | grad norm 0.993 | step time 0.254s | avg 0.254s/step | throughput 129,032 tokens/s
+step 6000/10000 | loss 3.9251 | lr 1.25e-04 | grad norm 0.956 | step time 0.256s | avg 0.254s/step | throughput 128,976 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 73 C | Power 66.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 64.3 W
+Validation loss at step 6000: 4.0252
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 6010/10000 | loss 4.1130 | lr 1.25e-04 | grad norm 1.007 | step time 0.253s | avg 0.263s/step | throughput 124,629 tokens/s
+step 6020/10000 | loss 3.9247 | lr 1.24e-04 | grad norm 0.949 | step time 0.254s | avg 0.263s/step | throughput 124,648 tokens/s
+step 6030/10000 | loss 3.9046 | lr 1.24e-04 | grad norm 0.953 | step time 0.254s | avg 0.263s/step | throughput 124,656 tokens/s
+step 6040/10000 | loss 4.0371 | lr 1.23e-04 | grad norm 0.999 | step time 0.256s | avg 0.263s/step | throughput 124,643 tokens/s
+step 6050/10000 | loss 3.8968 | lr 1.23e-04 | grad norm 0.930 | step time 0.253s | avg 0.263s/step | throughput 124,667 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 73 C | Power 67.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 66.2 W
+step 6060/10000 | loss 3.8923 | lr 1.23e-04 | grad norm 0.957 | step time 0.255s | avg 0.254s/step | throughput 129,000 tokens/s
+step 6070/10000 | loss 3.9284 | lr 1.22e-04 | grad norm 0.985 | step time 0.253s | avg 0.254s/step | throughput 129,132 tokens/s
+step 6080/10000 | loss 3.9393 | lr 1.22e-04 | grad norm 0.932 | step time 0.255s | avg 0.254s/step | throughput 129,135 tokens/s
+step 6090/10000 | loss 3.9191 | lr 1.21e-04 | grad norm 0.964 | step time 0.253s | avg 0.253s/step | throughput 129,329 tokens/s
+step 6100/10000 | loss 3.9541 | lr 1.21e-04 | grad norm 0.946 | step time 0.254s | avg 0.253s/step | throughput 129,431 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 66.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 69% | Temp 77 C | Power 64.2 W
+step 6110/10000 | loss 3.9849 | lr 1.20e-04 | grad norm 0.932 | step time 0.253s | avg 0.253s/step | throughput 129,371 tokens/s
+step 6120/10000 | loss 4.0075 | lr 1.20e-04 | grad norm 0.964 | step time 0.256s | avg 0.253s/step | throughput 129,276 tokens/s
+step 6130/10000 | loss 3.8969 | lr 1.20e-04 | grad norm 0.939 | step time 0.255s | avg 0.254s/step | throughput 129,246 tokens/s
+step 6140/10000 | loss 3.9196 | lr 1.19e-04 | grad norm 0.946 | step time 0.254s | avg 0.254s/step | throughput 129,066 tokens/s
+step 6150/10000 | loss 3.9424 | lr 1.19e-04 | grad norm 0.953 | step time 0.253s | avg 0.254s/step | throughput 128,960 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 42.2 W
+step 6160/10000 | loss 3.9219 | lr 1.18e-04 | grad norm 0.964 | step time 0.253s | avg 0.254s/step | throughput 128,900 tokens/s
+step 6170/10000 | loss 3.9880 | lr 1.18e-04 | grad norm 0.972 | step time 0.255s | avg 0.254s/step | throughput 128,858 tokens/s
+step 6180/10000 | loss 4.0467 | lr 1.18e-04 | grad norm 0.967 | step time 0.252s | avg 0.254s/step | throughput 128,962 tokens/s
+step 6190/10000 | loss 3.9578 | lr 1.17e-04 | grad norm 0.992 | step time 0.254s | avg 0.254s/step | throughput 128,972 tokens/s
+step 6200/10000 | loss 3.9661 | lr 1.17e-04 | grad norm 0.948 | step time 0.254s | avg 0.254s/step | throughput 128,993 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 67.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 49.6 W
+step 6210/10000 | loss 3.8269 | lr 1.16e-04 | grad norm 0.928 | step time 0.254s | avg 0.254s/step | throughput 129,129 tokens/s
+step 6220/10000 | loss 4.0502 | lr 1.16e-04 | grad norm 0.992 | step time 0.254s | avg 0.254s/step | throughput 129,110 tokens/s
+step 6230/10000 | loss 3.8207 | lr 1.16e-04 | grad norm 0.961 | step time 0.256s | avg 0.254s/step | throughput 129,013 tokens/s
+step 6240/10000 | loss 3.8208 | lr 1.15e-04 | grad norm 0.951 | step time 0.253s | avg 0.254s/step | throughput 129,003 tokens/s
+step 6250/10000 | loss 3.9575 | lr 1.15e-04 | grad norm 0.995 | step time 0.253s | avg 0.254s/step | throughput 128,967 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 46.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 61.2 W
+Validation loss at step 6250: 4.0846
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 6260/10000 | loss 4.0151 | lr 1.14e-04 | grad norm 0.978 | step time 0.257s | avg 0.262s/step | throughput 124,888 tokens/s
+step 6270/10000 | loss 3.8829 | lr 1.14e-04 | grad norm 0.955 | step time 0.255s | avg 0.262s/step | throughput 124,908 tokens/s
+step 6280/10000 | loss 3.9517 | lr 1.14e-04 | grad norm 0.973 | step time 0.255s | avg 0.262s/step | throughput 124,934 tokens/s
+step 6290/10000 | loss 3.9137 | lr 1.13e-04 | grad norm 0.964 | step time 0.256s | avg 0.262s/step | throughput 124,928 tokens/s
+step 6300/10000 | loss 4.0288 | lr 1.13e-04 | grad norm 0.990 | step time 0.256s | avg 0.262s/step | throughput 124,921 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 43.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.8 W
+step 6310/10000 | loss 4.0473 | lr 1.12e-04 | grad norm 0.973 | step time 0.253s | avg 0.254s/step | throughput 128,975 tokens/s
+step 6320/10000 | loss 3.9181 | lr 1.12e-04 | grad norm 0.968 | step time 0.255s | avg 0.254s/step | throughput 128,967 tokens/s
+step 6330/10000 | loss 3.9805 | lr 1.12e-04 | grad norm 0.972 | step time 0.254s | avg 0.254s/step | throughput 128,918 tokens/s
+step 6340/10000 | loss 4.0585 | lr 1.11e-04 | grad norm 0.956 | step time 0.252s | avg 0.254s/step | throughput 128,891 tokens/s
+step 6350/10000 | loss 3.9889 | lr 1.11e-04 | grad norm 0.966 | step time 0.254s | avg 0.254s/step | throughput 128,945 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 42.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 66.9 W
+step 6360/10000 | loss 4.0389 | lr 1.11e-04 | grad norm 1.028 | step time 0.254s | avg 0.254s/step | throughput 129,031 tokens/s
+step 6370/10000 | loss 3.9206 | lr 1.10e-04 | grad norm 0.933 | step time 0.255s | avg 0.254s/step | throughput 129,017 tokens/s
+step 6380/10000 | loss 3.8739 | lr 1.10e-04 | grad norm 0.987 | step time 0.253s | avg 0.254s/step | throughput 129,096 tokens/s
+step 6390/10000 | loss 3.8427 | lr 1.09e-04 | grad norm 0.975 | step time 0.254s | avg 0.254s/step | throughput 129,071 tokens/s
+step 6400/10000 | loss 3.8770 | lr 1.09e-04 | grad norm 1.032 | step time 0.255s | avg 0.254s/step | throughput 129,031 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 73 C | Power 42.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 66.8 W
+step 6410/10000 | loss 4.0450 | lr 1.09e-04 | grad norm 1.013 | step time 0.253s | avg 0.254s/step | throughput 129,002 tokens/s
+step 6420/10000 | loss 4.0265 | lr 1.08e-04 | grad norm 0.942 | step time 0.255s | avg 0.254s/step | throughput 128,974 tokens/s
+step 6430/10000 | loss 3.8818 | lr 1.08e-04 | grad norm 0.994 | step time 0.253s | avg 0.254s/step | throughput 128,904 tokens/s
+step 6440/10000 | loss 3.8586 | lr 1.07e-04 | grad norm 0.963 | step time 0.254s | avg 0.254s/step | throughput 128,943 tokens/s
+step 6450/10000 | loss 3.8708 | lr 1.07e-04 | grad norm 0.966 | step time 0.254s | avg 0.254s/step | throughput 128,935 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 50.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 63.2 W
+step 6460/10000 | loss 3.9144 | lr 1.07e-04 | grad norm 0.977 | step time 0.253s | avg 0.254s/step | throughput 128,927 tokens/s
+step 6470/10000 | loss 3.9614 | lr 1.06e-04 | grad norm 0.949 | step time 0.254s | avg 0.254s/step | throughput 128,963 tokens/s
+step 6480/10000 | loss 3.9870 | lr 1.06e-04 | grad norm 0.967 | step time 0.253s | avg 0.254s/step | throughput 128,881 tokens/s
+step 6490/10000 | loss 3.9406 | lr 1.05e-04 | grad norm 0.971 | step time 0.253s | avg 0.254s/step | throughput 128,879 tokens/s
+step 6500/10000 | loss 3.9770 | lr 1.05e-04 | grad norm 0.987 | step time 0.252s | avg 0.254s/step | throughput 128,871 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 66.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 64.5 W
+Validation loss at step 6500: 4.0191
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 6510/10000 | loss 3.9743 | lr 1.05e-04 | grad norm 0.965 | step time 0.257s | avg 0.263s/step | throughput 124,672 tokens/s
+step 6520/10000 | loss 3.9076 | lr 1.04e-04 | grad norm 0.997 | step time 0.254s | avg 0.263s/step | throughput 124,707 tokens/s
+step 6530/10000 | loss 3.7820 | lr 1.04e-04 | grad norm 0.983 | step time 0.254s | avg 0.263s/step | throughput 124,802 tokens/s
+step 6540/10000 | loss 3.9805 | lr 1.04e-04 | grad norm 1.012 | step time 0.253s | avg 0.263s/step | throughput 124,817 tokens/s
+step 6550/10000 | loss 3.8332 | lr 1.03e-04 | grad norm 0.929 | step time 0.254s | avg 0.263s/step | throughput 124,822 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 96% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 70.1 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 59.9 W
+step 6560/10000 | loss 3.9108 | lr 1.03e-04 | grad norm 0.959 | step time 0.252s | avg 0.254s/step | throughput 129,036 tokens/s
+step 6570/10000 | loss 3.8631 | lr 1.02e-04 | grad norm 0.992 | step time 0.254s | avg 0.254s/step | throughput 128,977 tokens/s
+step 6580/10000 | loss 3.9159 | lr 1.02e-04 | grad norm 1.018 | step time 0.253s | avg 0.254s/step | throughput 128,959 tokens/s
+step 6590/10000 | loss 3.9396 | lr 1.02e-04 | grad norm 0.988 | step time 0.254s | avg 0.254s/step | throughput 128,892 tokens/s
+step 6600/10000 | loss 4.0029 | lr 1.01e-04 | grad norm 0.991 | step time 0.254s | avg 0.254s/step | throughput 128,850 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 66.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 62.3 W
+step 6610/10000 | loss 3.9124 | lr 1.01e-04 | grad norm 1.006 | step time 0.255s | avg 0.255s/step | throughput 128,682 tokens/s
+step 6620/10000 | loss 3.9017 | lr 1.01e-04 | grad norm 0.970 | step time 0.256s | avg 0.255s/step | throughput 128,630 tokens/s
+step 6630/10000 | loss 3.9253 | lr 1.00e-04 | grad norm 0.942 | step time 0.253s | avg 0.255s/step | throughput 128,630 tokens/s
+step 6640/10000 | loss 3.8903 | lr 9.98e-05 | grad norm 0.973 | step time 0.256s | avg 0.255s/step | throughput 128,672 tokens/s
+step 6650/10000 | loss 3.8888 | lr 9.94e-05 | grad norm 0.954 | step time 0.253s | avg 0.254s/step | throughput 128,764 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 78% | Temp 73 C | Power 66.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.9 W
+step 6660/10000 | loss 3.9071 | lr 9.90e-05 | grad norm 0.956 | step time 0.254s | avg 0.254s/step | throughput 128,920 tokens/s
+step 6670/10000 | loss 4.0059 | lr 9.87e-05 | grad norm 0.960 | step time 0.253s | avg 0.254s/step | throughput 129,074 tokens/s
+step 6680/10000 | loss 3.9651 | lr 9.83e-05 | grad norm 0.996 | step time 0.257s | avg 0.254s/step | throughput 129,038 tokens/s
+step 6690/10000 | loss 3.9684 | lr 9.79e-05 | grad norm 0.977 | step time 0.256s | avg 0.254s/step | throughput 129,087 tokens/s
+step 6700/10000 | loss 3.9572 | lr 9.75e-05 | grad norm 0.955 | step time 0.253s | avg 0.254s/step | throughput 129,091 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 66.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 67.0 W
+step 6710/10000 | loss 3.9810 | lr 9.72e-05 | grad norm 0.989 | step time 0.254s | avg 0.254s/step | throughput 129,079 tokens/s
+step 6720/10000 | loss 3.9210 | lr 9.68e-05 | grad norm 0.934 | step time 0.252s | avg 0.254s/step | throughput 129,007 tokens/s
+step 6730/10000 | loss 3.9060 | lr 9.64e-05 | grad norm 0.978 | step time 0.254s | avg 0.254s/step | throughput 129,044 tokens/s
+step 6740/10000 | loss 3.8584 | lr 9.61e-05 | grad norm 1.015 | step time 0.253s | avg 0.254s/step | throughput 129,012 tokens/s
+step 6750/10000 | loss 3.9101 | lr 9.57e-05 | grad norm 0.963 | step time 0.253s | avg 0.254s/step | throughput 128,958 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 43.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 67.1 W
+Validation loss at step 6750: 4.0489
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 6760/10000 | loss 3.8680 | lr 9.53e-05 | grad norm 0.972 | step time 0.254s | avg 0.263s/step | throughput 124,684 tokens/s
+step 6770/10000 | loss 3.9256 | lr 9.50e-05 | grad norm 0.995 | step time 0.254s | avg 0.263s/step | throughput 124,670 tokens/s
+step 6780/10000 | loss 3.8906 | lr 9.46e-05 | grad norm 0.980 | step time 0.256s | avg 0.263s/step | throughput 124,672 tokens/s
+step 6790/10000 | loss 4.0714 | lr 9.42e-05 | grad norm 0.977 | step time 0.254s | avg 0.263s/step | throughput 124,671 tokens/s
+step 6800/10000 | loss 3.9596 | lr 9.39e-05 | grad norm 1.011 | step time 0.252s | avg 0.263s/step | throughput 124,702 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 66.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 49.8 W
+step 6810/10000 | loss 3.9176 | lr 9.35e-05 | grad norm 0.956 | step time 0.253s | avg 0.254s/step | throughput 128,998 tokens/s
+step 6820/10000 | loss 3.9322 | lr 9.31e-05 | grad norm 0.965 | step time 0.253s | avg 0.254s/step | throughput 129,028 tokens/s
+step 6830/10000 | loss 3.9478 | lr 9.28e-05 | grad norm 0.977 | step time 0.254s | avg 0.254s/step | throughput 129,019 tokens/s
+step 6840/10000 | loss 3.9511 | lr 9.24e-05 | grad norm 0.993 | step time 0.254s | avg 0.254s/step | throughput 129,026 tokens/s
+step 6850/10000 | loss 3.9682 | lr 9.20e-05 | grad norm 1.029 | step time 0.252s | avg 0.254s/step | throughput 128,989 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 54.3 W
+step 6860/10000 | loss 3.9367 | lr 9.17e-05 | grad norm 0.974 | step time 0.252s | avg 0.254s/step | throughput 129,049 tokens/s
+step 6870/10000 | loss 3.8463 | lr 9.13e-05 | grad norm 1.011 | step time 0.254s | avg 0.254s/step | throughput 129,084 tokens/s
+step 6880/10000 | loss 4.0033 | lr 9.10e-05 | grad norm 0.974 | step time 0.252s | avg 0.254s/step | throughput 129,199 tokens/s
+step 6890/10000 | loss 4.0370 | lr 9.06e-05 | grad norm 1.004 | step time 0.253s | avg 0.254s/step | throughput 129,148 tokens/s
+step 6900/10000 | loss 3.8609 | lr 9.03e-05 | grad norm 0.963 | step time 0.257s | avg 0.254s/step | throughput 129,219 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 41.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 65.3 W
+step 6910/10000 | loss 3.9164 | lr 8.99e-05 | grad norm 0.995 | step time 0.252s | avg 0.253s/step | throughput 129,333 tokens/s
+step 6920/10000 | loss 3.8799 | lr 8.95e-05 | grad norm 0.960 | step time 0.254s | avg 0.253s/step | throughput 129,441 tokens/s
+step 6930/10000 | loss 3.9476 | lr 8.92e-05 | grad norm 1.006 | step time 0.252s | avg 0.253s/step | throughput 129,543 tokens/s
+step 6940/10000 | loss 3.8854 | lr 8.88e-05 | grad norm 0.995 | step time 0.252s | avg 0.253s/step | throughput 129,760 tokens/s
+step 6950/10000 | loss 3.9566 | lr 8.85e-05 | grad norm 1.002 | step time 0.253s | avg 0.252s/step | throughput 129,797 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 66.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 58.3 W
+step 6960/10000 | loss 3.8375 | lr 8.81e-05 | grad norm 1.038 | step time 0.251s | avg 0.252s/step | throughput 129,940 tokens/s
+step 6970/10000 | loss 3.9354 | lr 8.78e-05 | grad norm 1.021 | step time 0.248s | avg 0.252s/step | throughput 129,966 tokens/s
+step 6980/10000 | loss 3.9149 | lr 8.74e-05 | grad norm 1.058 | step time 0.248s | avg 0.252s/step | throughput 129,966 tokens/s
+step 6990/10000 | loss 3.9480 | lr 8.71e-05 | grad norm 1.001 | step time 0.252s | avg 0.252s/step | throughput 130,034 tokens/s
+step 7000/10000 | loss 3.8681 | lr 8.67e-05 | grad norm 0.964 | step time 0.254s | avg 0.252s/step | throughput 130,047 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 72 C | Power 66.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 63.9 W
+Validation loss at step 7000: 4.0332
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 7010/10000 | loss 3.9413 | lr 8.64e-05 | grad norm 1.003 | step time 0.250s | avg 0.261s/step | throughput 125,647 tokens/s
+step 7020/10000 | loss 3.9126 | lr 8.60e-05 | grad norm 1.005 | step time 0.255s | avg 0.261s/step | throughput 125,561 tokens/s
+step 7030/10000 | loss 3.9339 | lr 8.57e-05 | grad norm 1.009 | step time 0.252s | avg 0.261s/step | throughput 125,548 tokens/s
+step 7040/10000 | loss 3.9265 | lr 8.53e-05 | grad norm 1.044 | step time 0.252s | avg 0.261s/step | throughput 125,441 tokens/s
+step 7050/10000 | loss 3.9012 | lr 8.50e-05 | grad norm 1.009 | step time 0.253s | avg 0.261s/step | throughput 125,519 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 80% | Temp 72 C | Power 43.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 65.3 W
+step 7060/10000 | loss 3.9555 | lr 8.46e-05 | grad norm 1.005 | step time 0.252s | avg 0.253s/step | throughput 129,707 tokens/s
+step 7070/10000 | loss 3.9117 | lr 8.43e-05 | grad norm 0.993 | step time 0.252s | avg 0.252s/step | throughput 129,799 tokens/s
+step 7080/10000 | loss 3.8336 | lr 8.40e-05 | grad norm 0.971 | step time 0.252s | avg 0.252s/step | throughput 129,804 tokens/s
+step 7090/10000 | loss 3.8924 | lr 8.36e-05 | grad norm 0.970 | step time 0.255s | avg 0.252s/step | throughput 129,785 tokens/s
+step 7100/10000 | loss 3.8325 | lr 8.33e-05 | grad norm 1.000 | step time 0.253s | avg 0.253s/step | throughput 129,709 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 72 C | Power 66.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 65.4 W
+step 7110/10000 | loss 3.8133 | lr 8.29e-05 | grad norm 0.992 | step time 0.248s | avg 0.253s/step | throughput 129,756 tokens/s
+step 7120/10000 | loss 3.8796 | lr 8.26e-05 | grad norm 1.019 | step time 0.252s | avg 0.253s/step | throughput 129,665 tokens/s
+step 7130/10000 | loss 4.0774 | lr 8.23e-05 | grad norm 1.019 | step time 0.252s | avg 0.253s/step | throughput 129,673 tokens/s
+step 7140/10000 | loss 3.8433 | lr 8.19e-05 | grad norm 0.944 | step time 0.257s | avg 0.253s/step | throughput 129,616 tokens/s
+step 7150/10000 | loss 3.9402 | lr 8.16e-05 | grad norm 1.015 | step time 0.253s | avg 0.253s/step | throughput 129,680 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 69.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 76 C | Power 64.6 W
+step 7160/10000 | loss 3.9047 | lr 8.12e-05 | grad norm 0.986 | step time 0.253s | avg 0.253s/step | throughput 129,747 tokens/s
+step 7170/10000 | loss 3.8471 | lr 8.09e-05 | grad norm 1.006 | step time 0.253s | avg 0.253s/step | throughput 129,770 tokens/s
+step 7180/10000 | loss 3.8981 | lr 8.06e-05 | grad norm 1.008 | step time 0.249s | avg 0.253s/step | throughput 129,583 tokens/s
+step 7190/10000 | loss 3.8684 | lr 8.02e-05 | grad norm 1.013 | step time 0.249s | avg 0.253s/step | throughput 129,677 tokens/s
+step 7200/10000 | loss 3.8534 | lr 7.99e-05 | grad norm 1.030 | step time 0.253s | avg 0.253s/step | throughput 129,726 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 65.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 76 C | Power 65.1 W
+step 7210/10000 | loss 3.8743 | lr 7.96e-05 | grad norm 1.006 | step time 0.253s | avg 0.253s/step | throughput 129,619 tokens/s
+step 7220/10000 | loss 3.9038 | lr 7.92e-05 | grad norm 0.993 | step time 0.253s | avg 0.253s/step | throughput 129,568 tokens/s
+step 7230/10000 | loss 3.7945 | lr 7.89e-05 | grad norm 0.969 | step time 0.254s | avg 0.253s/step | throughput 129,682 tokens/s
+step 7240/10000 | loss 3.7688 | lr 7.86e-05 | grad norm 0.977 | step time 0.255s | avg 0.253s/step | throughput 129,633 tokens/s
+step 7250/10000 | loss 3.7866 | lr 7.83e-05 | grad norm 1.024 | step time 0.253s | avg 0.253s/step | throughput 129,445 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 70.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 64.2 W
+Validation loss at step 7250: 3.9843
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 7260/10000 | loss 3.9275 | lr 7.79e-05 | grad norm 0.957 | step time 0.252s | avg 0.262s/step | throughput 125,143 tokens/s
+step 7270/10000 | loss 3.8816 | lr 7.76e-05 | grad norm 1.015 | step time 0.251s | avg 0.262s/step | throughput 125,212 tokens/s
+step 7280/10000 | loss 4.0380 | lr 7.73e-05 | grad norm 1.021 | step time 0.252s | avg 0.262s/step | throughput 125,189 tokens/s
+step 7290/10000 | loss 3.9597 | lr 7.70e-05 | grad norm 0.977 | step time 0.252s | avg 0.262s/step | throughput 125,210 tokens/s
+step 7300/10000 | loss 3.8258 | lr 7.66e-05 | grad norm 0.967 | step time 0.254s | avg 0.262s/step | throughput 125,137 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 68.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 63.1 W
+step 7310/10000 | loss 3.9140 | lr 7.63e-05 | grad norm 0.967 | step time 0.255s | avg 0.253s/step | throughput 129,294 tokens/s
+step 7320/10000 | loss 3.9555 | lr 7.60e-05 | grad norm 1.019 | step time 0.253s | avg 0.254s/step | throughput 129,179 tokens/s
+step 7330/10000 | loss 3.8532 | lr 7.57e-05 | grad norm 1.021 | step time 0.253s | avg 0.254s/step | throughput 129,171 tokens/s
+step 7340/10000 | loss 3.9383 | lr 7.53e-05 | grad norm 0.993 | step time 0.253s | avg 0.254s/step | throughput 129,081 tokens/s
+step 7350/10000 | loss 3.9435 | lr 7.50e-05 | grad norm 1.011 | step time 0.255s | avg 0.254s/step | throughput 129,207 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 66.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 76 C | Power 63.3 W
+step 7360/10000 | loss 3.9969 | lr 7.47e-05 | grad norm 0.996 | step time 0.254s | avg 0.254s/step | throughput 129,132 tokens/s
+step 7370/10000 | loss 3.8932 | lr 7.44e-05 | grad norm 0.982 | step time 0.255s | avg 0.254s/step | throughput 129,199 tokens/s
+step 7380/10000 | loss 3.8410 | lr 7.41e-05 | grad norm 1.006 | step time 0.253s | avg 0.254s/step | throughput 129,122 tokens/s
+step 7390/10000 | loss 3.9543 | lr 7.37e-05 | grad norm 0.988 | step time 0.253s | avg 0.254s/step | throughput 129,083 tokens/s
+step 7400/10000 | loss 3.8198 | lr 7.34e-05 | grad norm 1.010 | step time 0.252s | avg 0.254s/step | throughput 128,977 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 66.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 63.6 W
+step 7410/10000 | loss 3.8250 | lr 7.31e-05 | grad norm 0.994 | step time 0.254s | avg 0.254s/step | throughput 128,997 tokens/s
+step 7420/10000 | loss 3.9812 | lr 7.28e-05 | grad norm 1.044 | step time 0.256s | avg 0.254s/step | throughput 128,846 tokens/s
+step 7430/10000 | loss 3.8329 | lr 7.25e-05 | grad norm 1.016 | step time 0.252s | avg 0.254s/step | throughput 128,933 tokens/s
+step 7440/10000 | loss 3.9002 | lr 7.22e-05 | grad norm 1.017 | step time 0.256s | avg 0.254s/step | throughput 129,034 tokens/s
+step 7450/10000 | loss 3.9453 | lr 7.19e-05 | grad norm 0.975 | step time 0.254s | avg 0.254s/step | throughput 129,104 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 49.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 63.9 W
+step 7460/10000 | loss 3.8217 | lr 7.16e-05 | grad norm 1.020 | step time 0.252s | avg 0.253s/step | throughput 129,283 tokens/s
+step 7470/10000 | loss 3.8399 | lr 7.13e-05 | grad norm 0.981 | step time 0.251s | avg 0.253s/step | throughput 129,422 tokens/s
+step 7480/10000 | loss 3.8819 | lr 7.09e-05 | grad norm 1.027 | step time 0.253s | avg 0.253s/step | throughput 129,326 tokens/s
+step 7490/10000 | loss 3.9134 | lr 7.06e-05 | grad norm 0.994 | step time 0.258s | avg 0.254s/step | throughput 129,180 tokens/s
+step 7500/10000 | loss 3.7590 | lr 7.03e-05 | grad norm 0.969 | step time 0.253s | avg 0.254s/step | throughput 129,152 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 52.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 65.3 W
+Validation loss at step 7500: 3.9862
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 7510/10000 | loss 3.9263 | lr 7.00e-05 | grad norm 1.000 | step time 0.253s | avg 0.262s/step | throughput 124,944 tokens/s
+step 7520/10000 | loss 3.8231 | lr 6.97e-05 | grad norm 0.987 | step time 0.254s | avg 0.262s/step | throughput 124,853 tokens/s
+step 7530/10000 | loss 3.8369 | lr 6.94e-05 | grad norm 0.954 | step time 0.253s | avg 0.262s/step | throughput 124,848 tokens/s
+step 7540/10000 | loss 3.8709 | lr 6.91e-05 | grad norm 0.983 | step time 0.253s | avg 0.262s/step | throughput 124,911 tokens/s
+step 7550/10000 | loss 3.8096 | lr 6.88e-05 | grad norm 0.988 | step time 0.254s | avg 0.262s/step | throughput 124,884 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 66.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 63.6 W
+step 7560/10000 | loss 3.8581 | lr 6.85e-05 | grad norm 0.997 | step time 0.252s | avg 0.254s/step | throughput 129,092 tokens/s
+step 7570/10000 | loss 3.8180 | lr 6.82e-05 | grad norm 0.988 | step time 0.253s | avg 0.254s/step | throughput 129,076 tokens/s
+step 7580/10000 | loss 3.8956 | lr 6.79e-05 | grad norm 0.990 | step time 0.253s | avg 0.254s/step | throughput 129,156 tokens/s
+step 7590/10000 | loss 3.8397 | lr 6.76e-05 | grad norm 1.066 | step time 0.254s | avg 0.254s/step | throughput 129,163 tokens/s
+step 7600/10000 | loss 3.9446 | lr 6.73e-05 | grad norm 1.007 | step time 0.253s | avg 0.253s/step | throughput 129,287 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 60.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 67.8 W
+step 7610/10000 | loss 3.8696 | lr 6.70e-05 | grad norm 1.037 | step time 0.255s | avg 0.254s/step | throughput 129,256 tokens/s
+step 7620/10000 | loss 3.8609 | lr 6.67e-05 | grad norm 1.071 | step time 0.253s | avg 0.253s/step | throughput 129,306 tokens/s
+step 7630/10000 | loss 3.8659 | lr 6.64e-05 | grad norm 0.966 | step time 0.252s | avg 0.254s/step | throughput 129,231 tokens/s
+step 7640/10000 | loss 3.9461 | lr 6.62e-05 | grad norm 1.001 | step time 0.255s | avg 0.254s/step | throughput 129,198 tokens/s
+step 7650/10000 | loss 3.8815 | lr 6.59e-05 | grad norm 1.045 | step time 0.255s | avg 0.254s/step | throughput 129,026 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 54.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.0 W
+step 7660/10000 | loss 3.8630 | lr 6.56e-05 | grad norm 1.030 | step time 0.254s | avg 0.254s/step | throughput 128,890 tokens/s
+step 7670/10000 | loss 3.9348 | lr 6.53e-05 | grad norm 0.991 | step time 0.254s | avg 0.254s/step | throughput 128,808 tokens/s
+step 7680/10000 | loss 3.8943 | lr 6.50e-05 | grad norm 1.025 | step time 0.255s | avg 0.254s/step | throughput 128,828 tokens/s
+step 7690/10000 | loss 3.9116 | lr 6.47e-05 | grad norm 1.015 | step time 0.253s | avg 0.254s/step | throughput 128,812 tokens/s
+step 7700/10000 | loss 3.7891 | lr 6.44e-05 | grad norm 1.016 | step time 0.254s | avg 0.254s/step | throughput 128,914 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 73 C | Power 44.7 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 64.0 W
+step 7710/10000 | loss 3.9113 | lr 6.41e-05 | grad norm 0.994 | step time 0.254s | avg 0.254s/step | throughput 128,969 tokens/s
+step 7720/10000 | loss 3.8867 | lr 6.38e-05 | grad norm 1.003 | step time 0.255s | avg 0.254s/step | throughput 129,067 tokens/s
+step 7730/10000 | loss 3.8525 | lr 6.36e-05 | grad norm 0.995 | step time 0.254s | avg 0.254s/step | throughput 129,044 tokens/s
+step 7740/10000 | loss 3.9307 | lr 6.33e-05 | grad norm 1.002 | step time 0.252s | avg 0.254s/step | throughput 129,115 tokens/s
+step 7750/10000 | loss 3.8071 | lr 6.30e-05 | grad norm 1.007 | step time 0.254s | avg 0.254s/step | throughput 129,131 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 42.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 64.0 W
+Validation loss at step 7750: 4.0062
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 7760/10000 | loss 3.8364 | lr 6.27e-05 | grad norm 0.986 | step time 0.254s | avg 0.262s/step | throughput 124,860 tokens/s
+step 7770/10000 | loss 3.7698 | lr 6.24e-05 | grad norm 1.054 | step time 0.255s | avg 0.263s/step | throughput 124,825 tokens/s
+step 7780/10000 | loss 3.9526 | lr 6.22e-05 | grad norm 1.046 | step time 0.256s | avg 0.262s/step | throughput 124,838 tokens/s
+step 7790/10000 | loss 3.8898 | lr 6.19e-05 | grad norm 0.994 | step time 0.253s | avg 0.263s/step | throughput 124,792 tokens/s
+step 7800/10000 | loss 3.8803 | lr 6.16e-05 | grad norm 1.029 | step time 0.254s | avg 0.263s/step | throughput 124,733 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 67.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 46.7 W
+step 7810/10000 | loss 3.8407 | lr 6.13e-05 | grad norm 0.996 | step time 0.256s | avg 0.254s/step | throughput 128,873 tokens/s
+step 7820/10000 | loss 3.9775 | lr 6.11e-05 | grad norm 1.024 | step time 0.254s | avg 0.254s/step | throughput 128,891 tokens/s
+step 7830/10000 | loss 3.9036 | lr 6.08e-05 | grad norm 1.002 | step time 0.255s | avg 0.254s/step | throughput 128,879 tokens/s
+step 7840/10000 | loss 3.7823 | lr 6.05e-05 | grad norm 1.047 | step time 0.254s | avg 0.254s/step | throughput 128,876 tokens/s
+step 7850/10000 | loss 3.7621 | lr 6.02e-05 | grad norm 1.016 | step time 0.253s | avg 0.254s/step | throughput 128,877 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 66.2 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 70% | Temp 77 C | Power 62.6 W
+step 7860/10000 | loss 3.8945 | lr 6.00e-05 | grad norm 1.008 | step time 0.254s | avg 0.254s/step | throughput 128,882 tokens/s
+step 7870/10000 | loss 3.7981 | lr 5.97e-05 | grad norm 1.016 | step time 0.253s | avg 0.254s/step | throughput 128,851 tokens/s
+step 7880/10000 | loss 3.7554 | lr 5.94e-05 | grad norm 1.014 | step time 0.255s | avg 0.254s/step | throughput 128,895 tokens/s
+step 7890/10000 | loss 3.9238 | lr 5.92e-05 | grad norm 1.005 | step time 0.253s | avg 0.254s/step | throughput 128,938 tokens/s
+step 7900/10000 | loss 3.8090 | lr 5.89e-05 | grad norm 1.014 | step time 0.254s | avg 0.254s/step | throughput 128,919 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 63.9 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.3 W
+step 7910/10000 | loss 3.8597 | lr 5.86e-05 | grad norm 1.015 | step time 0.256s | avg 0.254s/step | throughput 129,043 tokens/s
+step 7920/10000 | loss 3.8422 | lr 5.84e-05 | grad norm 1.030 | step time 0.255s | avg 0.254s/step | throughput 129,025 tokens/s
+step 7930/10000 | loss 3.9000 | lr 5.81e-05 | grad norm 1.039 | step time 0.254s | avg 0.254s/step | throughput 128,948 tokens/s
+step 7940/10000 | loss 3.8498 | lr 5.79e-05 | grad norm 1.009 | step time 0.253s | avg 0.254s/step | throughput 128,880 tokens/s
+step 7950/10000 | loss 3.8674 | lr 5.76e-05 | grad norm 0.964 | step time 0.253s | avg 0.254s/step | throughput 128,854 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 64.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 67.7 W
+step 7960/10000 | loss 3.9418 | lr 5.73e-05 | grad norm 1.022 | step time 0.255s | avg 0.254s/step | throughput 128,901 tokens/s
+step 7970/10000 | loss 3.7986 | lr 5.71e-05 | grad norm 0.994 | step time 0.256s | avg 0.254s/step | throughput 128,924 tokens/s
+step 7980/10000 | loss 3.9350 | lr 5.68e-05 | grad norm 1.055 | step time 0.255s | avg 0.254s/step | throughput 128,882 tokens/s
+step 7990/10000 | loss 3.8694 | lr 5.66e-05 | grad norm 1.036 | step time 0.253s | avg 0.254s/step | throughput 128,898 tokens/s
+step 8000/10000 | loss 3.8863 | lr 5.63e-05 | grad norm 1.014 | step time 0.255s | avg 0.254s/step | throughput 128,923 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 66.1 W
+Validation loss at step 8000: 4.0020
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 8010/10000 | loss 3.7669 | lr 5.61e-05 | grad norm 1.038 | step time 0.254s | avg 0.263s/step | throughput 124,505 tokens/s
+step 8020/10000 | loss 3.8850 | lr 5.58e-05 | grad norm 1.012 | step time 0.254s | avg 0.263s/step | throughput 124,510 tokens/s
+step 8030/10000 | loss 3.8206 | lr 5.56e-05 | grad norm 0.987 | step time 0.253s | avg 0.263s/step | throughput 124,550 tokens/s
+step 8040/10000 | loss 3.9049 | lr 5.53e-05 | grad norm 0.992 | step time 0.255s | avg 0.263s/step | throughput 124,529 tokens/s
+step 8050/10000 | loss 3.8636 | lr 5.51e-05 | grad norm 1.068 | step time 0.255s | avg 0.263s/step | throughput 124,522 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 65.6 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 50.3 W
+step 8060/10000 | loss 3.9143 | lr 5.48e-05 | grad norm 1.019 | step time 0.253s | avg 0.254s/step | throughput 128,926 tokens/s
+step 8070/10000 | loss 3.8070 | lr 5.46e-05 | grad norm 1.042 | step time 0.253s | avg 0.254s/step | throughput 128,922 tokens/s
+step 8080/10000 | loss 3.9042 | lr 5.43e-05 | grad norm 1.042 | step time 0.254s | avg 0.254s/step | throughput 128,928 tokens/s
+step 8090/10000 | loss 3.8338 | lr 5.41e-05 | grad norm 0.996 | step time 0.251s | avg 0.254s/step | throughput 128,969 tokens/s
+step 8100/10000 | loss 3.8034 | lr 5.38e-05 | grad norm 1.051 | step time 0.251s | avg 0.254s/step | throughput 128,995 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 68.0 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 62.3 W
+step 8110/10000 | loss 3.8054 | lr 5.36e-05 | grad norm 1.039 | step time 0.254s | avg 0.254s/step | throughput 128,843 tokens/s
+step 8120/10000 | loss 3.9441 | lr 5.33e-05 | grad norm 1.022 | step time 0.254s | avg 0.254s/step | throughput 128,844 tokens/s
+step 8130/10000 | loss 3.8208 | lr 5.31e-05 | grad norm 1.003 | step time 0.254s | avg 0.254s/step | throughput 128,854 tokens/s
+step 8140/10000 | loss 3.8256 | lr 5.29e-05 | grad norm 1.036 | step time 0.253s | avg 0.254s/step | throughput 128,836 tokens/s
+step 8150/10000 | loss 3.7950 | lr 5.26e-05 | grad norm 1.012 | step time 0.253s | avg 0.254s/step | throughput 128,826 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 65.5 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 67.9 W
+step 8160/10000 | loss 3.9340 | lr 5.24e-05 | grad norm 1.027 | step time 0.254s | avg 0.254s/step | throughput 128,819 tokens/s
+step 8170/10000 | loss 3.7424 | lr 5.22e-05 | grad norm 1.016 | step time 0.254s | avg 0.254s/step | throughput 128,823 tokens/s
+step 8180/10000 | loss 3.9240 | lr 5.19e-05 | grad norm 1.052 | step time 0.254s | avg 0.254s/step | throughput 128,793 tokens/s
+step 8190/10000 | loss 3.9494 | lr 5.17e-05 | grad norm 1.041 | step time 0.253s | avg 0.254s/step | throughput 128,864 tokens/s
+step 8200/10000 | loss 3.7775 | lr 5.15e-05 | grad norm 1.025 | step time 0.254s | avg 0.254s/step | throughput 128,828 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 62.2 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 77 C | Power 63.9 W
+step 8210/10000 | loss 3.8897 | lr 5.12e-05 | grad norm 1.003 | step time 0.255s | avg 0.254s/step | throughput 128,900 tokens/s
+step 8220/10000 | loss 3.8464 | lr 5.10e-05 | grad norm 0.994 | step time 0.256s | avg 0.254s/step | throughput 128,862 tokens/s
+step 8230/10000 | loss 3.8433 | lr 5.08e-05 | grad norm 1.004 | step time 0.255s | avg 0.254s/step | throughput 128,831 tokens/s
+step 8240/10000 | loss 3.9780 | lr 5.05e-05 | grad norm 1.023 | step time 0.253s | avg 0.255s/step | throughput 128,732 tokens/s
+step 8250/10000 | loss 3.9492 | lr 5.03e-05 | grad norm 1.028 | step time 0.255s | avg 0.255s/step | throughput 128,754 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 73 C | Power 44.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 64.5 W
+Validation loss at step 8250: 3.9928
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 8260/10000 | loss 3.8038 | lr 5.01e-05 | grad norm 1.001 | step time 0.254s | avg 0.263s/step | throughput 124,538 tokens/s
+step 8270/10000 | loss 3.9017 | lr 4.99e-05 | grad norm 1.061 | step time 0.253s | avg 0.263s/step | throughput 124,596 tokens/s
+step 8280/10000 | loss 3.8197 | lr 4.96e-05 | grad norm 1.032 | step time 0.254s | avg 0.263s/step | throughput 124,645 tokens/s
+step 8290/10000 | loss 3.8777 | lr 4.94e-05 | grad norm 1.024 | step time 0.253s | avg 0.263s/step | throughput 124,701 tokens/s
+step 8300/10000 | loss 3.8590 | lr 4.92e-05 | grad norm 1.004 | step time 0.252s | avg 0.263s/step | throughput 124,714 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 67.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 61.0 W
+step 8310/10000 | loss 3.8229 | lr 4.90e-05 | grad norm 1.026 | step time 0.254s | avg 0.254s/step | throughput 128,894 tokens/s
+step 8320/10000 | loss 3.8533 | lr 4.88e-05 | grad norm 1.004 | step time 0.255s | avg 0.254s/step | throughput 128,857 tokens/s
+step 8330/10000 | loss 3.9693 | lr 4.85e-05 | grad norm 1.036 | step time 0.254s | avg 0.254s/step | throughput 128,889 tokens/s
+step 8340/10000 | loss 3.8073 | lr 4.83e-05 | grad norm 1.008 | step time 0.253s | avg 0.254s/step | throughput 128,887 tokens/s
+step 8350/10000 | loss 3.8313 | lr 4.81e-05 | grad norm 1.027 | step time 0.254s | avg 0.254s/step | throughput 128,871 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 97% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 64.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 77% | Temp 77 C | Power 66.7 W
+step 8360/10000 | loss 3.8097 | lr 4.79e-05 | grad norm 1.005 | step time 0.253s | avg 0.254s/step | throughput 128,851 tokens/s
+step 8370/10000 | loss 3.8425 | lr 4.77e-05 | grad norm 1.042 | step time 0.254s | avg 0.254s/step | throughput 128,853 tokens/s
+step 8380/10000 | loss 3.8979 | lr 4.75e-05 | grad norm 1.018 | step time 0.254s | avg 0.254s/step | throughput 128,824 tokens/s
+step 8390/10000 | loss 3.8562 | lr 4.73e-05 | grad norm 1.014 | step time 0.253s | avg 0.254s/step | throughput 128,788 tokens/s
+step 8400/10000 | loss 4.0672 | lr 4.71e-05 | grad norm 1.052 | step time 0.254s | avg 0.254s/step | throughput 128,804 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 66.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 67.9 W
+step 8410/10000 | loss 3.7843 | lr 4.68e-05 | grad norm 1.005 | step time 0.253s | avg 0.254s/step | throughput 128,786 tokens/s
+step 8420/10000 | loss 3.8366 | lr 4.66e-05 | grad norm 1.021 | step time 0.254s | avg 0.254s/step | throughput 128,792 tokens/s
+step 8430/10000 | loss 3.7741 | lr 4.64e-05 | grad norm 1.024 | step time 0.251s | avg 0.254s/step | throughput 128,794 tokens/s
+step 8440/10000 | loss 3.8559 | lr 4.62e-05 | grad norm 1.024 | step time 0.253s | avg 0.254s/step | throughput 128,821 tokens/s
+step 8450/10000 | loss 3.8083 | lr 4.60e-05 | grad norm 1.014 | step time 0.255s | avg 0.254s/step | throughput 128,802 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 49.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 64.0 W
+step 8460/10000 | loss 3.8113 | lr 4.58e-05 | grad norm 1.034 | step time 0.255s | avg 0.254s/step | throughput 128,795 tokens/s
+step 8470/10000 | loss 3.9399 | lr 4.56e-05 | grad norm 0.986 | step time 0.253s | avg 0.254s/step | throughput 128,773 tokens/s
+step 8480/10000 | loss 3.9215 | lr 4.54e-05 | grad norm 1.069 | step time 0.255s | avg 0.255s/step | throughput 128,745 tokens/s
+step 8490/10000 | loss 3.8781 | lr 4.52e-05 | grad norm 1.001 | step time 0.255s | avg 0.255s/step | throughput 128,730 tokens/s
+step 8500/10000 | loss 3.9354 | lr 4.50e-05 | grad norm 1.020 | step time 0.254s | avg 0.255s/step | throughput 128,727 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 73 C | Power 62.5 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 77 C | Power 52.2 W
+Validation loss at step 8500: 3.9727
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 8510/10000 | loss 3.8517 | lr 4.48e-05 | grad norm 1.006 | step time 0.254s | avg 0.263s/step | throughput 124,358 tokens/s
+step 8520/10000 | loss 3.8413 | lr 4.46e-05 | grad norm 1.047 | step time 0.255s | avg 0.264s/step | throughput 124,346 tokens/s
+step 8530/10000 | loss 3.8744 | lr 4.44e-05 | grad norm 1.021 | step time 0.254s | avg 0.263s/step | throughput 124,393 tokens/s
+step 8540/10000 | loss 3.8786 | lr 4.43e-05 | grad norm 1.023 | step time 0.254s | avg 0.263s/step | throughput 124,383 tokens/s
+step 8550/10000 | loss 3.8249 | lr 4.41e-05 | grad norm 1.012 | step time 0.253s | avg 0.263s/step | throughput 124,410 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 73 C | Power 44.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 74% | Temp 77 C | Power 61.9 W
+step 8560/10000 | loss 3.8092 | lr 4.39e-05 | grad norm 1.004 | step time 0.255s | avg 0.254s/step | throughput 128,786 tokens/s
+step 8570/10000 | loss 3.7960 | lr 4.37e-05 | grad norm 1.014 | step time 0.253s | avg 0.254s/step | throughput 128,831 tokens/s
+step 8580/10000 | loss 3.8395 | lr 4.35e-05 | grad norm 0.994 | step time 0.251s | avg 0.254s/step | throughput 128,814 tokens/s
+step 8590/10000 | loss 3.8274 | lr 4.33e-05 | grad norm 1.019 | step time 0.253s | avg 0.255s/step | throughput 128,737 tokens/s
+step 8600/10000 | loss 3.8095 | lr 4.31e-05 | grad norm 1.038 | step time 0.255s | avg 0.255s/step | throughput 128,715 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 66.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 52.2 W
+step 8610/10000 | loss 3.7810 | lr 4.29e-05 | grad norm 1.004 | step time 0.254s | avg 0.254s/step | throughput 128,859 tokens/s
+step 8620/10000 | loss 3.7667 | lr 4.28e-05 | grad norm 1.006 | step time 0.251s | avg 0.254s/step | throughput 128,861 tokens/s
+step 8630/10000 | loss 3.7868 | lr 4.26e-05 | grad norm 1.027 | step time 0.255s | avg 0.254s/step | throughput 128,831 tokens/s
+step 8640/10000 | loss 3.8315 | lr 4.24e-05 | grad norm 1.013 | step time 0.255s | avg 0.254s/step | throughput 128,915 tokens/s
+step 8650/10000 | loss 3.9662 | lr 4.22e-05 | grad norm 1.019 | step time 0.253s | avg 0.254s/step | throughput 128,957 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 76% | Temp 73 C | Power 69.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 77 C | Power 59.9 W
+step 8660/10000 | loss 3.8122 | lr 4.20e-05 | grad norm 0.996 | step time 0.254s | avg 0.254s/step | throughput 128,836 tokens/s
+step 8670/10000 | loss 3.8848 | lr 4.19e-05 | grad norm 1.014 | step time 0.254s | avg 0.254s/step | throughput 128,846 tokens/s
+step 8680/10000 | loss 3.8429 | lr 4.17e-05 | grad norm 1.018 | step time 0.255s | avg 0.254s/step | throughput 128,883 tokens/s
+step 8690/10000 | loss 3.8366 | lr 4.15e-05 | grad norm 0.993 | step time 0.254s | avg 0.254s/step | throughput 128,881 tokens/s
+step 8700/10000 | loss 3.7676 | lr 4.13e-05 | grad norm 1.022 | step time 0.254s | avg 0.254s/step | throughput 128,929 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 73 C | Power 64.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 77 C | Power 65.7 W
+step 8710/10000 | loss 3.8199 | lr 4.12e-05 | grad norm 1.052 | step time 0.254s | avg 0.254s/step | throughput 129,008 tokens/s
+step 8720/10000 | loss 3.8577 | lr 4.10e-05 | grad norm 1.044 | step time 0.257s | avg 0.254s/step | throughput 128,982 tokens/s
+step 8730/10000 | loss 3.8055 | lr 4.08e-05 | grad norm 1.047 | step time 0.253s | avg 0.254s/step | throughput 129,032 tokens/s
+step 8740/10000 | loss 3.7726 | lr 4.07e-05 | grad norm 1.001 | step time 0.253s | avg 0.254s/step | throughput 129,138 tokens/s
+step 8750/10000 | loss 3.7738 | lr 4.05e-05 | grad norm 1.017 | step time 0.254s | avg 0.254s/step | throughput 129,120 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 72 C | Power 64.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 55.5 W
+Validation loss at step 8750: 3.9958
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
+step 8760/10000 | loss 3.8436 | lr 4.03e-05 | grad norm 1.017 | step time 0.253s | avg 0.262s/step | throughput 124,965 tokens/s
+step 8770/10000 | loss 3.7736 | lr 4.02e-05 | grad norm 1.001 | step time 0.253s | avg 0.262s/step | throughput 125,042 tokens/s
+step 8780/10000 | loss 3.9851 | lr 4.00e-05 | grad norm 1.038 | step time 0.257s | avg 0.262s/step | throughput 125,063 tokens/s
+step 8790/10000 | loss 4.0108 | lr 3.98e-05 | grad norm 1.038 | step time 0.253s | avg 0.262s/step | throughput 125,084 tokens/s
+step 8800/10000 | loss 3.8794 | lr 3.97e-05 | grad norm 1.011 | step time 0.253s | avg 0.262s/step | throughput 125,154 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 72 C | Power 65.4 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 54.3 W
+step 8810/10000 | loss 3.8655 | lr 3.95e-05 | grad norm 1.015 | step time 0.255s | avg 0.253s/step | throughput 129,455 tokens/s
+step 8820/10000 | loss 3.9102 | lr 3.94e-05 | grad norm 1.055 | step time 0.252s | avg 0.253s/step | throughput 129,381 tokens/s
+step 8830/10000 | loss 3.7847 | lr 3.92e-05 | grad norm 1.035 | step time 0.255s | avg 0.253s/step | throughput 129,333 tokens/s
+step 8840/10000 | loss 3.7833 | lr 3.91e-05 | grad norm 1.010 | step time 0.253s | avg 0.254s/step | throughput 129,234 tokens/s
+step 8850/10000 | loss 3.8467 | lr 3.89e-05 | grad norm 1.061 | step time 0.254s | avg 0.254s/step | throughput 129,122 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 79% | Temp 72 C | Power 64.1 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 75% | Temp 76 C | Power 60.2 W
+step 8860/10000 | loss 3.8479 | lr 3.88e-05 | grad norm 1.039 | step time 0.253s | avg 0.254s/step | throughput 129,129 tokens/s
+step 8870/10000 | loss 3.8266 | lr 3.86e-05 | grad norm 1.040 | step time 0.253s | avg 0.254s/step | throughput 129,247 tokens/s
+step 8880/10000 | loss 3.8529 | lr 3.85e-05 | grad norm 1.069 | step time 0.250s | avg 0.253s/step | throughput 129,313 tokens/s
+step 8890/10000 | loss 3.8239 | lr 3.83e-05 | grad norm 1.003 | step time 0.254s | avg 0.253s/step | throughput 129,344 tokens/s
+step 8900/10000 | loss 3.7975 | lr 3.82e-05 | grad norm 1.018 | step time 0.254s | avg 0.253s/step | throughput 129,482 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 72% | Temp 72 C | Power 67.3 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 64.4 W
+step 8910/10000 | loss 3.8891 | lr 3.80e-05 | grad norm 1.030 | step time 0.253s | avg 0.253s/step | throughput 129,375 tokens/s
+step 8920/10000 | loss 3.7579 | lr 3.79e-05 | grad norm 1.062 | step time 0.248s | avg 0.253s/step | throughput 129,340 tokens/s
+step 8930/10000 | loss 3.8119 | lr 3.77e-05 | grad norm 1.016 | step time 0.252s | avg 0.253s/step | throughput 129,293 tokens/s
+step 8940/10000 | loss 3.9101 | lr 3.76e-05 | grad norm 1.051 | step time 0.253s | avg 0.253s/step | throughput 129,331 tokens/s
+step 8950/10000 | loss 3.8292 | lr 3.74e-05 | grad norm 1.092 | step time 0.253s | avg 0.254s/step | throughput 129,171 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 72 C | Power 64.0 W
+  GPU 1: Tesla T4 | Util 98% | VRAM 2.74/15.00 GB | Memory util 69% | Temp 76 C | Power 64.1 W
+step 8960/10000 | loss 3.8904 | lr 3.73e-05 | grad norm 1.038 | step time 0.253s | avg 0.254s/step | throughput 129,171 tokens/s
+step 8970/10000 | loss 3.7820 | lr 3.72e-05 | grad norm 1.024 | step time 0.253s | avg 0.254s/step | throughput 129,075 tokens/s
+step 8980/10000 | loss 3.9159 | lr 3.70e-05 | grad norm 1.019 | step time 0.255s | avg 0.254s/step | throughput 129,008 tokens/s
+step 8990/10000 | loss 3.8542 | lr 3.69e-05 | grad norm 1.031 | step time 0.255s | avg 0.254s/step | throughput 128,939 tokens/s
+step 9000/10000 | loss 3.8093 | lr 3.68e-05 | grad norm 1.038 | step time 0.254s | avg 0.254s/step | throughput 129,100 tokens/s
+GPU statistics:
+  GPU 0: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 71% | Temp 72 C | Power 65.8 W
+  GPU 1: Tesla T4 | Util 99% | VRAM 2.74/15.00 GB | Memory util 73% | Temp 76 C | Power 63.2 W
+Validation loss at step 9000: 4.0125
+Checkpoint saved: /kaggle/working/hyprxLLM/checkpoints/latest.pt
